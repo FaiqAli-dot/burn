@@ -29,9 +29,20 @@ static func get_material(material_id: String) -> MaterialDefinition:
 	return load(MATERIAL_PATHS[material_id]) as MaterialDefinition
 
 
+static func list_material_ids() -> PackedStringArray:
+	var ids: PackedStringArray = PackedStringArray()
+	for key in MATERIAL_PATHS.keys():
+		ids.append(String(key))
+	ids.sort()
+	return ids
+
+
 static func spawn_level(parent: Node, level_path: String) -> Dictionary:
+	return spawn_from_dict(parent, load_level_dict(level_path))
+
+
+static func spawn_from_dict(parent: Node, data: Dictionary) -> Dictionary:
 	## Returns { "meta": Dictionary, "objects": Array[BurnableObject] }
-	var data := load_level_dict(level_path)
 	var spawned: Array[BurnableObject] = []
 	if data.is_empty():
 		return {"meta": {}, "objects": spawned}
@@ -57,11 +68,16 @@ static func spawn_level(parent: Node, level_path: String) -> Dictionary:
 		parent.add_child(obj)
 		spawned.append(obj)
 
+	var generator: Dictionary = {}
+	if typeof(data.get("generator", null)) == TYPE_DICTIONARY:
+		generator = data["generator"]
+
 	return {
 		"meta": {
 			"id": String(data.get("id", "level")),
 			"display_name": String(data.get("display_name", "LEVEL")),
 			"hint": String(data.get("hint", "")),
+			"generator": generator,
 		},
 		"objects": spawned,
 	}
