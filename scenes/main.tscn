@@ -1,0 +1,148 @@
+[gd_scene load_steps=7 format=3 uid="uid://burn_main_p1"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Shader" path="res://shaders/background.gdshader" id="2_bg"]
+[ext_resource type="Script" path="res://scripts/fire/fire_manager.gd" id="3_fire"]
+[ext_resource type="Script" path="res://scripts/visual/particle_manager.gd" id="4_fx"]
+[ext_resource type="Script" path="res://scripts/ui/score_manager.gd" id="5_score"]
+[ext_resource type="Script" path="res://scripts/ui/ui_manager.gd" id="6_ui"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bg"]
+shader = ExtResource("2_bg")
+shader_parameter/top_color = Color(0.14, 0.1, 0.08, 1)
+shader_parameter/bottom_color = Color(0.045, 0.035, 0.03, 1)
+shader_parameter/vignette_strength = 0.48
+shader_parameter/grain_strength = 0.03
+shader_parameter/time_scale = 0.07
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Backdrop" type="ColorRect" parent="Background"]
+material = SubResource("ShaderMaterial_bg")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="LevelRoot" type="Node2D" parent="World"]
+
+[node name="Systems" type="Node" parent="."]
+
+[node name="FireManager" type="Node" parent="Systems"]
+script = ExtResource("3_fire")
+
+[node name="ParticleManager" type="Node" parent="Systems"]
+script = ExtResource("4_fx")
+
+[node name="ScoreManager" type="Node" parent="Systems"]
+script = ExtResource("5_score")
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 20
+script = ExtResource("6_ui")
+
+[node name="Root" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopBar" type="HBoxContainer" parent="UI/Root"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 28.0
+offset_top = 36.0
+offset_right = -28.0
+offset_bottom = 96.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="LevelLabel" type="Label" parent="UI/Root/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.92, 0.86, 0.78, 0.92)
+theme_override_font_sizes/font_size = 28
+text = "SPARK"
+vertical_alignment = 1
+
+[node name="PercentLabel" type="Label" parent="UI/Root/TopBar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.62, 0.28, 1)
+theme_override_font_sizes/font_size = 34
+text = "0%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Banner" type="Label" parent="UI/Root"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -80.0
+offset_right = 200.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.78, 1)
+theme_override_font_sizes/font_size = 64
+text = "BURNED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="UI/Root"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -4.0
+offset_right = 240.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.85, 0.72, 0.58, 0.9)
+theme_override_font_sizes/font_size = 22
+text = "100%"
+horizontal_alignment = 1
+
+[node name="RetryButton" type="Button" parent="UI/Root"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -110.0
+offset_right = 70.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(0.95, 0.88, 0.78, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.7, 0.35, 1)
+theme_override_colors/font_hover_color = Color(1, 0.78, 0.45, 1)
+theme_override_font_sizes/font_size = 18
+text = "RETRY"
+flat = true
