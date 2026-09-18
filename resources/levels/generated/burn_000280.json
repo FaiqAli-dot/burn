@@ -1,0 +1,290 @@
+{
+	"display_name": "CLIMB-1520",
+	"generator": {
+		"archetype": "CLIMB",
+		"difficulty": 48.1,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1520,
+		"signature": "4102816277",
+		"solution_count": 16,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"sol_7",
+			"sol_8",
+			"sol_9",
+			"sol_10",
+			"sol_11",
+			"sol_12",
+			"sol_13",
+			"sol_14",
+			"sol_15"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "Start low. Climb the fuse.",
+	"id": "burn_gen_climb_1520",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				353,
+				1056.7
+			],
+			"rotation_deg": 3.3,
+			"scoring": true,
+			"size": [
+				51.5,
+				51
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				260.1,
+				951.8
+			],
+			"rotation_deg": 9,
+			"scoring": true,
+			"size": [
+				46.5,
+				49.7
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				444.4,
+				948.2
+			],
+			"rotation_deg": -8.4,
+			"scoring": true,
+			"size": [
+				45.3,
+				39.9
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				232.2,
+				843.4
+			],
+			"rotation_deg": -2.6,
+			"scoring": true,
+			"size": [
+				55,
+				49.2
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				349.1,
+				834
+			],
+			"rotation_deg": -0.6,
+			"scoring": true,
+			"size": [
+				50.2,
+				44.8
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				480.6,
+				841.5
+			],
+			"rotation_deg": 1.7,
+			"scoring": true,
+			"size": [
+				53,
+				48.2
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				352.6,
+				726.4
+			],
+			"rotation_deg": 0.1,
+			"scoring": true,
+			"size": [
+				223.6,
+				40.3
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				269.3,
+				608.1
+			],
+			"rotation_deg": 8,
+			"scoring": true,
+			"size": [
+				46.2,
+				42.8
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				431.8,
+				606.3
+			],
+			"rotation_deg": 2.9,
+			"scoring": true,
+			"size": [
+				53.9,
+				59.1
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				350.9,
+				501.5
+			],
+			"rotation_deg": 1.9,
+			"scoring": true,
+			"size": [
+				54.9,
+				49.1
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "wood",
+			"position": [
+				353.5,
+				380.6
+			],
+			"rotation_deg": -0.6,
+			"scoring": true,
+			"size": [
+				49,
+				108.4
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				272.6,
+				257.8
+			],
+			"rotation_deg": -0.9,
+			"scoring": true,
+			"size": [
+				52.1,
+				51
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				429.6,
+				257.3
+			],
+			"rotation_deg": -7.3,
+			"scoring": true,
+			"size": [
+				54.1,
+				51.1
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "wood",
+			"position": [
+				355.4,
+				162.5
+			],
+			"rotation_deg": -0.5,
+			"scoring": true,
+			"size": [
+				286.3,
+				32
+			]
+		},
+		{
+			"id": "sol_14",
+			"material": "paper",
+			"position": [
+				258.8,
+				112.1
+			],
+			"rotation_deg": 2.5,
+			"scoring": true,
+			"size": [
+				45,
+				44.2
+			]
+		},
+		{
+			"id": "sol_15",
+			"material": "paper",
+			"position": [
+				444.4,
+				115.9
+			],
+			"rotation_deg": -2,
+			"scoring": true,
+			"size": [
+				50.2,
+				51.8
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				126,
+				1065
+			],
+			"rotation_deg": -11.5,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				594.3,
+				1074.4
+			],
+			"rotation_deg": 2.9,
+			"scoring": false,
+			"size": [
+				51.5,
+				51
+			]
+		}
+	]
+}

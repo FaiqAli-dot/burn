@@ -1,0 +1,283 @@
+{
+  "id": "level_01",
+  "display_name": "SPARK",
+  "hint": "Start low. Feed the beam. Climb.",
+  "objects": [
+    {
+      "id": "start_paper",
+      "material": "paper",
+      "position": [
+        360,
+        1080
+      ],
+      "size": [
+        58,
+        58
+      ],
+      "rotation_deg": -6
+    },
+    {
+      "id": "p_l1",
+      "material": "paper",
+      "position": [
+        275,
+        980
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 8
+    },
+    {
+      "id": "p_r1",
+      "material": "paper",
+      "position": [
+        445,
+        980
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": -10
+    },
+    {
+      "id": "p_l2",
+      "material": "paper",
+      "position": [
+        210,
+        860
+      ],
+      "size": [
+        52,
+        44
+      ],
+      "rotation_deg": 4
+    },
+    {
+      "id": "p_c2",
+      "material": "paper",
+      "position": [
+        360,
+        850
+      ],
+      "size": [
+        52,
+        48
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p_r2",
+      "material": "paper",
+      "position": [
+        510,
+        860
+      ],
+      "size": [
+        52,
+        44
+      ],
+      "rotation_deg": -4
+    },
+    {
+      "id": "wood_beam",
+      "material": "wood",
+      "position": [
+        360,
+        740
+      ],
+      "size": [
+        300,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p_above_l",
+      "material": "paper",
+      "position": [
+        245,
+        630
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 12
+    },
+    {
+      "id": "p_above_r",
+      "material": "paper",
+      "position": [
+        475,
+        630
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": -12
+    },
+    {
+      "id": "p_mid",
+      "material": "paper",
+      "position": [
+        360,
+        520
+      ],
+      "size": [
+        54,
+        48
+      ],
+      "rotation_deg": 3
+    },
+    {
+      "id": "wood_post",
+      "material": "wood",
+      "position": [
+        360,
+        390
+      ],
+      "size": [
+        48,
+        130
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p_tl1",
+      "material": "paper",
+      "position": [
+        225,
+        265
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -8
+    },
+    {
+      "id": "p_tl2",
+      "material": "paper",
+      "position": [
+        305,
+        250
+      ],
+      "size": [
+        44,
+        44
+      ],
+      "rotation_deg": 6
+    },
+    {
+      "id": "p_tr1",
+      "material": "paper",
+      "position": [
+        415,
+        250
+      ],
+      "size": [
+        44,
+        44
+      ],
+      "rotation_deg": -5
+    },
+    {
+      "id": "p_tr2",
+      "material": "paper",
+      "position": [
+        495,
+        265
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 9
+    },
+    {
+      "id": "wood_crown",
+      "material": "wood",
+      "position": [
+        360,
+        145
+      ],
+      "size": [
+        320,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p_crown_l",
+      "material": "paper",
+      "position": [
+        220,
+        80
+      ],
+      "size": [
+        44,
+        36
+      ],
+      "rotation_deg": 2
+    },
+    {
+      "id": "p_crown_r",
+      "material": "paper",
+      "position": [
+        500,
+        80
+      ],
+      "size": [
+        44,
+        36
+      ],
+      "rotation_deg": -2
+    },
+    {
+      "id": "decoy_wood",
+      "material": "wood",
+      "position": [
+        90,
+        1000
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "rotation_deg": 18,
+      "scoring": false
+    },
+    {
+      "id": "decoy_paper_a",
+      "material": "paper",
+      "position": [
+        640,
+        1040
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": -12,
+      "scoring": false
+    },
+    {
+      "id": "decoy_paper_b",
+      "material": "paper",
+      "position": [
+        660,
+        960
+      ],
+      "size": [
+        38,
+        38
+      ],
+      "rotation_deg": 8,
+      "scoring": false
+    }
+  ]
+}

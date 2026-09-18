@@ -1,0 +1,291 @@
+{
+	"display_name": "CLIMB-1540",
+	"generator": {
+		"archetype": "CLIMB",
+		"difficulty": 49.3,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1540,
+		"signature": "2263879843",
+		"solution_count": 17,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"sol_7",
+			"sol_8",
+			"sol_9",
+			"sol_10",
+			"sol_11",
+			"sol_12",
+			"sol_13",
+			"sol_14",
+			"sol_15",
+			"decoy_0"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "Start low. Climb the fuse.",
+	"id": "burn_gen_climb_1540",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				338,
+				1065.9
+			],
+			"rotation_deg": -5.5,
+			"scoring": true,
+			"size": [
+				46.8,
+				51.1
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				257.2,
+				971.6
+			],
+			"rotation_deg": -10.1,
+			"scoring": true,
+			"size": [
+				55.7,
+				51.5
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				416.4,
+				976.1
+			],
+			"rotation_deg": 8.7,
+			"scoring": true,
+			"size": [
+				55,
+				51
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				243.3,
+				882
+			],
+			"rotation_deg": -5.8,
+			"scoring": true,
+			"size": [
+				45.3,
+				45.3
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				338,
+				871.6
+			],
+			"rotation_deg": -0.5,
+			"scoring": true,
+			"size": [
+				47.2,
+				43.6
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				434.7,
+				882.2
+			],
+			"rotation_deg": 4,
+			"scoring": true,
+			"size": [
+				52.3,
+				54.6
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				339.9,
+				779
+			],
+			"rotation_deg": 0.3,
+			"scoring": true,
+			"size": [
+				187.7,
+				41.4
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				263.7,
+				675
+			],
+			"rotation_deg": -9.5,
+			"scoring": true,
+			"size": [
+				55.6,
+				50
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				411.7,
+				673.2
+			],
+			"rotation_deg": 2.9,
+			"scoring": true,
+			"size": [
+				52.8,
+				55.5
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				338,
+				581.8
+			],
+			"rotation_deg": 5,
+			"scoring": true,
+			"size": [
+				51.3,
+				53.8
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "wood",
+			"position": [
+				338,
+				480
+			],
+			"rotation_deg": -0.3,
+			"scoring": true,
+			"size": [
+				42.1,
+				137.5
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				269.4,
+				370.2
+			],
+			"rotation_deg": 6,
+			"scoring": true,
+			"size": [
+				45.4,
+				42.9
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				400.4,
+				367.5
+			],
+			"rotation_deg": -7.5,
+			"scoring": true,
+			"size": [
+				44.5,
+				44.7
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "wood",
+			"position": [
+				341.1,
+				286.5
+			],
+			"rotation_deg": -0.2,
+			"scoring": true,
+			"size": [
+				284.2,
+				32
+			]
+		},
+		{
+			"id": "sol_14",
+			"material": "paper",
+			"position": [
+				258.9,
+				200.3
+			],
+			"rotation_deg": 2.5,
+			"scoring": true,
+			"size": [
+				49.9,
+				50.5
+			]
+		},
+		{
+			"id": "sol_15",
+			"material": "paper",
+			"position": [
+				413.7,
+				200.2
+			],
+			"rotation_deg": -2.1,
+			"scoring": true,
+			"size": [
+				54.7,
+				54.2
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				126,
+				1057.5
+			],
+			"rotation_deg": 16.5,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				592.5,
+				1062.8
+			],
+			"rotation_deg": -0.7,
+			"scoring": false,
+			"size": [
+				55,
+				58.4
+			]
+		}
+	]
+}

@@ -1,0 +1,291 @@
+{
+	"display_name": "CLIMB-1635",
+	"generator": {
+		"archetype": "CLIMB",
+		"difficulty": 49.3,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1635,
+		"signature": "4071254938",
+		"solution_count": 17,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"sol_7",
+			"sol_8",
+			"sol_9",
+			"sol_10",
+			"sol_11",
+			"sol_12",
+			"sol_13",
+			"sol_14",
+			"sol_15",
+			"decoy_0"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "Start low. Climb the fuse.",
+	"id": "burn_gen_climb_1635",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				328.7,
+				1051.5
+			],
+			"rotation_deg": -7.7,
+			"scoring": true,
+			"size": [
+				53.1,
+				49.3
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				248.6,
+				960.2
+			],
+			"rotation_deg": 5.5,
+			"scoring": true,
+			"size": [
+				51.8,
+				56.4
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				398,
+				967.3
+			],
+			"rotation_deg": -7.7,
+			"scoring": true,
+			"size": [
+				47.4,
+				50.1
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				201,
+				869.4
+			],
+			"rotation_deg": -6.5,
+			"scoring": true,
+			"size": [
+				50.1,
+				47.8
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				338.2,
+				860.6
+			],
+			"rotation_deg": 0.2,
+			"scoring": true,
+			"size": [
+				50.9,
+				53.1
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				453,
+				869.3
+			],
+			"rotation_deg": -2.9,
+			"scoring": true,
+			"size": [
+				52.7,
+				50.8
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				321.3,
+				779.4
+			],
+			"rotation_deg": -0.9,
+			"scoring": true,
+			"size": [
+				186.3,
+				40.9
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				251.2,
+				675.7
+			],
+			"rotation_deg": 3.5,
+			"scoring": true,
+			"size": [
+				52.6,
+				47.6
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				398.8,
+				672.8
+			],
+			"rotation_deg": -9.8,
+			"scoring": true,
+			"size": [
+				46.5,
+				47.4
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				326.3,
+				576.4
+			],
+			"rotation_deg": 4.6,
+			"scoring": true,
+			"size": [
+				52.3,
+				54.6
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "wood",
+			"position": [
+				323.5,
+				479
+			],
+			"rotation_deg": 0.2,
+			"scoring": true,
+			"size": [
+				48.4,
+				102.3
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				260.3,
+				368.6
+			],
+			"rotation_deg": 0.6,
+			"scoring": true,
+			"size": [
+				46.1,
+				40.6
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				385.4,
+				372
+			],
+			"rotation_deg": -3.7,
+			"scoring": true,
+			"size": [
+				48.8,
+				46.7
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "wood",
+			"position": [
+				319.2,
+				294.9
+			],
+			"rotation_deg": 0.6,
+			"scoring": true,
+			"size": [
+				230.2,
+				32
+			]
+		},
+		{
+			"id": "sol_14",
+			"material": "paper",
+			"position": [
+				248.6,
+				226.2
+			],
+			"rotation_deg": 1.8,
+			"scoring": true,
+			"size": [
+				50.6,
+				43.1
+			]
+		},
+		{
+			"id": "sol_15",
+			"material": "paper",
+			"position": [
+				397.9,
+				222.1
+			],
+			"rotation_deg": -3.1,
+			"scoring": true,
+			"size": [
+				54.3,
+				53.4
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				126,
+				1051.8
+			],
+			"rotation_deg": -12.3,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				596.4,
+				1077.4
+			],
+			"rotation_deg": 15.6,
+			"scoring": false,
+			"size": [
+				47.3,
+				45.2
+			]
+		}
+	]
+}

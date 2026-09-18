@@ -1,0 +1,292 @@
+{
+	"display_name": "CLIMB-1010",
+	"generator": {
+		"archetype": "CLIMB",
+		"difficulty": 50.5,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1010,
+		"signature": "3554243971",
+		"solution_count": 18,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"sol_7",
+			"sol_8",
+			"sol_9",
+			"sol_10",
+			"sol_11",
+			"sol_12",
+			"sol_13",
+			"sol_14",
+			"sol_15",
+			"decoy_0",
+			"decoy_1"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "Start low. Climb the fuse.",
+	"id": "burn_gen_climb_1010",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				359.3,
+				1071.1
+			],
+			"rotation_deg": -5.4,
+			"scoring": true,
+			"size": [
+				53.1,
+				57.8
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				273.4,
+				990.9
+			],
+			"rotation_deg": 9.2,
+			"scoring": true,
+			"size": [
+				53.5,
+				48.4
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				446.3,
+				993
+			],
+			"rotation_deg": -2.5,
+			"scoring": true,
+			"size": [
+				47.4,
+				44.6
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				250.9,
+				894.6
+			],
+			"rotation_deg": 2.7,
+			"scoring": true,
+			"size": [
+				56,
+				50
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				364.5,
+				884.6
+			],
+			"rotation_deg": -1.3,
+			"scoring": true,
+			"size": [
+				52.5,
+				49.5
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				470,
+				892.3
+			],
+			"rotation_deg": -0.3,
+			"scoring": true,
+			"size": [
+				55.7,
+				58.9
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				359.7,
+				781.5
+			],
+			"rotation_deg": -1.2,
+			"scoring": true,
+			"size": [
+				253.4,
+				39.3
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				284.2,
+				665.5
+			],
+			"rotation_deg": 6.9,
+			"scoring": true,
+			"size": [
+				54.1,
+				47.5
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				429.3,
+				665.2
+			],
+			"rotation_deg": 1.9,
+			"scoring": true,
+			"size": [
+				53.8,
+				51.8
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				362.9,
+				563.2
+			],
+			"rotation_deg": 0.1,
+			"scoring": true,
+			"size": [
+				51.7,
+				48.5
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "wood",
+			"position": [
+				364.8,
+				457.2
+			],
+			"rotation_deg": -0.4,
+			"scoring": true,
+			"size": [
+				47.3,
+				112.3
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				282.3,
+				338.2
+			],
+			"rotation_deg": 2.7,
+			"scoring": true,
+			"size": [
+				48.4,
+				50.8
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				434.9,
+				343.2
+			],
+			"rotation_deg": -4,
+			"scoring": true,
+			"size": [
+				48.3,
+				48.3
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "wood",
+			"position": [
+				356.9,
+				252.5
+			],
+			"rotation_deg": 1.1,
+			"scoring": true,
+			"size": [
+				220.3,
+				32
+			]
+		},
+		{
+			"id": "sol_14",
+			"material": "paper",
+			"position": [
+				279.4,
+				171.2
+			],
+			"rotation_deg": 1.5,
+			"scoring": true,
+			"size": [
+				54.7,
+				58.4
+			]
+		},
+		{
+			"id": "sol_15",
+			"material": "paper",
+			"position": [
+				449.7,
+				171
+			],
+			"rotation_deg": -3.2,
+			"scoring": true,
+			"size": [
+				54.8,
+				47.1
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				126,
+				1064.8
+			],
+			"rotation_deg": 11.9,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				594,
+				1076.9
+			],
+			"rotation_deg": 3.2,
+			"scoring": false,
+			"size": [
+				52,
+				44.5
+			]
+		}
+	]
+}
