@@ -5,6 +5,12 @@ extends RefCounted
 const MATERIAL_PATHS := {
 	"paper": "res://resources/materials/paper.tres",
 	"wood": "res://resources/materials/wood.tres",
+	"grass": "res://resources/materials/grass.tres",
+	"fabric": "res://resources/materials/fabric.tres",
+	"oil": "res://resources/materials/oil.tres",
+	"plastic": "res://resources/materials/plastic.tres",
+	"metal": "res://resources/materials/metal.tres",
+	"glass": "res://resources/materials/glass.tres",
 }
 
 const BURNABLE_SCENE := preload("res://scenes/burnable_object.tscn")

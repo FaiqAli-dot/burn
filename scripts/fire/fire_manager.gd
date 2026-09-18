@@ -2,14 +2,19 @@ class_name FireManager
 extends Node
 ## Pure gameplay fire simulation. Does not spawn particles or read shaders.
 ## Heat spreads by distance × material heat_output × target flammability.
+## Explosion heat bursts are queued from MaterialDefinition.explodes (deterministic).
 
 signal simulation_settled
 signal burn_progress_changed(percent: float)
+signal explosion_occurred(origin: Vector2, radius: float, heat: float)
+signal chain_ignition(count: int)
 
 var _objects: Array[BurnableObject] = []
 var _active: bool = false
 var _has_started: bool = false
 var _settled_emitted: bool = false
+var _pending_bursts: Array = [] ## {pos, radius, heat, falloff}
+var _ignition_count: int = 0
 
 
 func set_objects(objects: Array[BurnableObject]) -> void:
@@ -17,11 +22,15 @@ func set_objects(objects: Array[BurnableObject]) -> void:
 	_active = true
 	_has_started = false
 	_settled_emitted = false
+	_pending_bursts.clear()
+	_ignition_count = 0
 	for obj in _objects:
 		if not obj.ignited.is_connected(_on_object_ignited):
 			obj.ignited.connect(_on_object_ignited)
 		if not obj.destroyed.is_connected(_on_object_destroyed):
 			obj.destroyed.connect(_on_object_destroyed.bind(obj))
+		if not obj.explosion_triggered.is_connected(_on_explosion_triggered):
+			obj.explosion_triggered.connect(_on_explosion_triggered)
 
 
 func clear() -> void:
@@ -29,10 +38,16 @@ func clear() -> void:
 	_active = false
 	_has_started = false
 	_settled_emitted = false
+	_pending_bursts.clear()
+	_ignition_count = 0
 
 
 func has_started() -> bool:
 	return _has_started
+
+
+func get_ignition_count() -> int:
+	return _ignition_count
 
 
 func request_player_ignite(target: BurnableObject) -> bool:
@@ -45,11 +60,24 @@ func request_player_ignite(target: BurnableObject) -> bool:
 
 func _on_object_ignited(_by_player: bool) -> void:
 	_has_started = true
+	_ignition_count += 1
+	chain_ignition.emit(_ignition_count)
 	_emit_progress()
 
 
 func _on_object_destroyed(_obj: BurnableObject) -> void:
 	_emit_progress()
+
+
+func _on_explosion_triggered(origin: BurnableObject, radius: float, heat: float, falloff_power: float) -> void:
+	_pending_bursts.append({
+		"pos": origin.global_position,
+		"radius": radius,
+		"heat": heat,
+		"falloff": falloff_power,
+		"source": origin,
+	})
+	explosion_occurred.emit(origin.global_position, radius, heat)
 
 
 func _physics_process(delta: float) -> void:
@@ -59,6 +87,9 @@ func _physics_process(delta: float) -> void:
 func tick(delta: float) -> void:
 	if not _active or _objects.is_empty():
 		return
+
+	## 0) Deterministic explosion heat bursts (instantaneous, before continuous radiators).
+	_apply_pending_bursts()
 
 	## 1) Radiators push heat into neighbors (AABB edge gap — no teleports).
 	for src in _objects:
@@ -92,8 +123,37 @@ func tick(delta: float) -> void:
 		simulation_settled.emit()
 
 
+func _apply_pending_bursts() -> void:
+	if _pending_bursts.is_empty():
+		return
+	var bursts := _pending_bursts.duplicate()
+	_pending_bursts.clear()
+	for burst in bursts:
+		var pos: Vector2 = burst["pos"]
+		var radius: float = float(burst["radius"])
+		var heat: float = float(burst["heat"])
+		var power: float = float(burst["falloff"])
+		var source = burst.get("source", null)
+		for dst in _objects:
+			if not is_instance_valid(dst) or not dst.can_receive_heat():
+				continue
+			if source != null and dst == source:
+				continue
+			## Use center distance for burst (explosion is radial from origin).
+			var dist := pos.distance_to(dst.global_position) - dst.get_half_extents().length() * 0.35
+			dist = maxf(dist, 0.0)
+			if dist > radius:
+				continue
+			var falloff := 1.0 - (dist / radius)
+			falloff = pow(falloff, power)
+			var transfer := heat * falloff * dst.material_def.flammability
+			dst.add_heat(transfer)
+
+
 func _any_fire_activity() -> bool:
 	## HEATING alone does not keep the sim alive — without radiators, the chain stalled.
+	if not _pending_bursts.is_empty():
+		return true
 	for obj in _objects:
 		if not is_instance_valid(obj):
 			continue
@@ -112,7 +172,7 @@ func get_burn_percent() -> float:
 	var total := 0.0
 	var done := 0.0
 	for obj in _objects:
-		if not is_instance_valid(obj) or not obj.counts_for_score:
+		if not is_instance_valid(obj) or not obj.contributes_to_burn_goal():
 			continue
 		total += obj.burn_weight
 		done += obj.get_progress_contribution()
@@ -126,12 +186,12 @@ func _emit_progress() -> void:
 
 
 func is_fully_burned() -> bool:
-	## Win when every scoring object has finished its life (DESTROYED).
-	var any_scoring := false
+	## Win when every flammable scoring object has finished (DESTROYED).
+	var any_goal := false
 	for obj in _objects:
-		if not is_instance_valid(obj) or not obj.counts_for_score:
+		if not is_instance_valid(obj) or not obj.contributes_to_burn_goal():
 			continue
-		any_scoring = true
+		any_goal = true
 		if obj.state != BurnableObject.State.DESTROYED:
 			return false
-	return any_scoring
+	return any_goal

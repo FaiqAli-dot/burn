@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/fire/material_definition.gd" id="1_mat"]
+
+[resource]
+script = ExtResource("1_mat")
+id = &"oil"
+display_name = "Oil"
+flammability = 1.2
+ignition_threshold = 16.0
+heat_output = 55.0
+heat_radius = 80.0
+burn_duration = 1.6
+char_duration = 0.0
+ignition_flash = 1.6
+is_flammable = true
+player_ignitable = true
+counts_toward_burn_goal = true
+explodes = true
+explode_at_burn_fraction = 0.35
+explosion_radius = 180.0
+explosion_heat = 130.0
+explosion_falloff_power = 1.15
+base_color = Color(0.18, 0.22, 0.28, 1)
+edge_color = Color(0.1, 0.12, 0.16, 1)
+burn_tint = Color(1, 0.7, 0.2, 1)
+char_color = Color(0.08, 0.08, 0.1, 1)
+default_size = Vector2(48, 48)
+particle_scale = 1.5

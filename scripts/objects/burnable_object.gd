@@ -8,6 +8,7 @@ signal heat_changed(heat: float, threshold: float)
 signal ignited(by_player: bool)
 signal destroyed
 signal tap_requested(object: BurnableObject)
+signal explosion_triggered(origin: BurnableObject, radius: float, heat: float, falloff_power: float)
 
 enum State {
 	UNIGNITED,
@@ -28,6 +29,7 @@ var char_timer: float = 0.0
 var ignite_timer: float = 0.0
 var burn_intensity: float = 0.0
 var ignited_by_player: bool = false
+var _did_explode: bool = false
 
 ## Contribution to burn % (area-weighted). Fixed at spawn.
 var burn_weight: float = 1.0
@@ -105,7 +107,17 @@ func edge_gap_to(other: BurnableObject) -> float:
 
 
 func can_receive_heat() -> bool:
+	if material_def == null or not material_def.is_flammable:
+		return false
 	return state in [State.UNIGNITED, State.HEATING]
+
+
+func contributes_to_burn_goal() -> bool:
+	if not counts_for_score:
+		return false
+	if material_def == null:
+		return true
+	return material_def.counts_toward_burn_goal and material_def.is_flammable
 
 
 func is_radiating() -> bool:
@@ -163,6 +175,8 @@ func add_heat(amount: float) -> void:
 
 
 func try_player_ignite() -> bool:
+	if material_def == null or not material_def.is_flammable or not material_def.player_ignitable:
+		return false
 	if state != State.UNIGNITED and state != State.HEATING:
 		return false
 	ignited_by_player = true
@@ -197,6 +211,7 @@ func simulation_tick(delta: float) -> void:
 			var total := maxf(material_def.burn_duration, 0.01)
 			burned_fraction = 1.0 - clampf(burn_timer / total, 0.0, 1.0)
 			burn_intensity = lerpf(1.0, 0.55, burned_fraction)
+			_maybe_explode()
 			_update_burn_visual()
 			if burn_timer <= 0.0:
 				if material_def.char_duration > 0.0:
@@ -210,6 +225,20 @@ func simulation_tick(delta: float) -> void:
 			_update_char_visual()
 			if char_timer <= 0.0:
 				_destroy()
+
+
+func _maybe_explode() -> void:
+	if _did_explode or material_def == null or not material_def.explodes:
+		return
+	if burned_fraction + 0.0001 < material_def.explode_at_burn_fraction:
+		return
+	_did_explode = true
+	explosion_triggered.emit(
+		self,
+		material_def.explosion_radius,
+		material_def.explosion_heat,
+		material_def.explosion_falloff_power
+	)
 
 
 func _destroy() -> void:
@@ -306,6 +335,7 @@ func reset_for_retry() -> void:
 	burn_intensity = 0.0
 	burned_fraction = 0.0
 	ignited_by_player = false
+	_did_explode = false
 	visible = true
 	input_pickable = true
 	_set_state(State.UNIGNITED)

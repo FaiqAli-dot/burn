@@ -119,7 +119,7 @@ func _init() -> void:
 
 
 func ARCH_AT(i: int) -> String:
-	var archs := ["CLIMB", "CHAIN", "TRAP", "BRIDGE", "FORK"]
+	var archs := ["CLIMB", "CHAIN", "TRAP", "BRIDGE", "FORK", "EXPLOSIVE"]
 	return archs[i % archs.size()]
 
 

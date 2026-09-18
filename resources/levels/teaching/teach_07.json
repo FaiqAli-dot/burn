@@ -1,0 +1,98 @@
+{
+  "id": "teach_07",
+  "display_name": "DRUM",
+  "hint": "Oil will pop.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1000
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p1",
+      "material": "paper",
+      "position": [
+        300,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p2",
+      "material": "paper",
+      "position": [
+        420,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "oil",
+      "material": "oil",
+      "position": [
+        360,
+        800
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p3",
+      "material": "paper",
+      "position": [
+        280,
+        650
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 6
+    },
+    {
+      "id": "p4",
+      "material": "paper",
+      "position": [
+        440,
+        650
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -6
+    },
+    {
+      "id": "p5",
+      "material": "paper",
+      "position": [
+        360,
+        560
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

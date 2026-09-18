@@ -1,0 +1,215 @@
+{
+  "id": "teach_04",
+  "display_name": "CLIMB",
+  "hint": "Keep climbing.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1060
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        280,
+        960
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 6
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        440,
+        960
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -6
+    },
+    {
+      "id": "c",
+      "material": "paper",
+      "position": [
+        220,
+        860
+      ],
+      "size": [
+        48,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        360,
+        850
+      ],
+      "size": [
+        48,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e",
+      "material": "paper",
+      "position": [
+        500,
+        860
+      ],
+      "size": [
+        48,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "beam",
+      "material": "wood",
+      "position": [
+        360,
+        750
+      ],
+      "size": [
+        290,
+        36
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f",
+      "material": "paper",
+      "position": [
+        250,
+        650
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 8
+    },
+    {
+      "id": "g",
+      "material": "paper",
+      "position": [
+        470,
+        650
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -8
+    },
+    {
+      "id": "h",
+      "material": "paper",
+      "position": [
+        360,
+        560
+      ],
+      "size": [
+        50,
+        44
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "post",
+      "material": "wood",
+      "position": [
+        360,
+        420
+      ],
+      "size": [
+        44,
+        120
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "i",
+      "material": "paper",
+      "position": [
+        280,
+        280
+      ],
+      "size": [
+        44,
+        44
+      ],
+      "rotation_deg": 5
+    },
+    {
+      "id": "j",
+      "material": "paper",
+      "position": [
+        440,
+        280
+      ],
+      "size": [
+        44,
+        44
+      ],
+      "rotation_deg": -5
+    },
+    {
+      "id": "crown",
+      "material": "wood",
+      "position": [
+        360,
+        180
+      ],
+      "size": [
+        300,
+        32
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "k",
+      "material": "paper",
+      "position": [
+        240,
+        110
+      ],
+      "size": [
+        42,
+        36
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "l",
+      "material": "paper",
+      "position": [
+        480,
+        110
+      ],
+      "size": [
+        42,
+        36
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

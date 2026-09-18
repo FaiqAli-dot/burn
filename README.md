@@ -2,7 +2,7 @@
 
 Hyper-casual fire puzzle. Tap once. Watch it burn.
 
-**Phase 1** — Godot 4.x + GDScript prototype proving IGNITE → SPREAD → CHAIN → DESTROY.
+**Phase 2** — playable mobile vertical slice: new materials, oil explosions, juice, audio/haptics, progression + local save, teaching levels.
 
 ## Requirements
 
@@ -54,9 +54,11 @@ Legacy SPARK-only check: `godot --headless --path . -s res://tools/sim_validate.
 | --- | --- |
 | Tap / LMB | Ignite the tapped object (once per run) |
 | R / Retry button | Reload current level |
-| F1 | Toggle generation debug (solver dump) |
-| N | Load next generated level |
+| CONTINUE | After win — next unlocked level |
+| F1 | Toggle generation debug browser |
+| N / P | Next / prev (debug browse or progression advance) |
 | B | Load handcrafted SPARK |
+| [ | Debug: restart progression |
 
 Goal: **BURN 100%**. Wrong starts can stall — retry and pick another spark.
 
@@ -83,7 +85,9 @@ Gameplay simulation (`FireManager` + `BurnableObject` heat/state) is **separate*
 
 ## Materials
 
-Phase 1 ships **PAPER** and **WOOD** via `MaterialDefinition` resources. Add a new material by creating a `.tres`, registering its path in `LevelLoader.MATERIAL_PATHS`, and referencing it from level JSON — no FireManager rewrite.
+Phase 2 ships **PAPER, WOOD, GRASS, FABRIC, OIL, PLASTIC, METAL, GLASS** via `MaterialDefinition`.
+Metal/glass are non-flammable obstacles (excluded from burn %). Oil detonates with a deterministic heat burst.
+Add a material by creating a `.tres`, registering it in `LevelLoader.MATERIAL_PATHS`, and referencing it from level JSON.
 
 ## Assets
 

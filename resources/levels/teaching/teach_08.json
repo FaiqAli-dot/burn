@@ -1,0 +1,126 @@
+{
+  "id": "teach_08",
+  "display_name": "FRAME",
+  "hint": "Metal and glass do not burn.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1000
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p1",
+      "material": "paper",
+      "position": [
+        300,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p2",
+      "material": "paper",
+      "position": [
+        420,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "m",
+      "material": "metal",
+      "position": [
+        360,
+        820
+      ],
+      "size": [
+        120,
+        24
+      ],
+      "rotation_deg": 0,
+      "scoring": false
+    },
+    {
+      "id": "p3",
+      "material": "paper",
+      "position": [
+        240,
+        740
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g",
+      "material": "glass",
+      "position": [
+        480,
+        740
+      ],
+      "size": [
+        40,
+        56
+      ],
+      "rotation_deg": 0,
+      "scoring": false
+    },
+    {
+      "id": "p4",
+      "material": "paper",
+      "position": [
+        300,
+        640
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p5",
+      "material": "paper",
+      "position": [
+        420,
+        640
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p6",
+      "material": "paper",
+      "position": [
+        360,
+        540
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

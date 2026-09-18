@@ -1,0 +1,254 @@
+{
+  "id": "p2_large_chain",
+  "display_name": "ROAR",
+  "hint": "Long chain juice.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1100
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a1",
+      "material": "grass",
+      "position": [
+        290,
+        1010
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a2",
+      "material": "grass",
+      "position": [
+        430,
+        1010
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b1",
+      "material": "paper",
+      "position": [
+        250,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b2",
+      "material": "paper",
+      "position": [
+        360,
+        910
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b3",
+      "material": "paper",
+      "position": [
+        470,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "beam1",
+      "material": "wood",
+      "position": [
+        360,
+        820
+      ],
+      "size": [
+        300,
+        36
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "c1",
+      "material": "fabric",
+      "position": [
+        260,
+        730
+      ],
+      "size": [
+        80,
+        32
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "c2",
+      "material": "fabric",
+      "position": [
+        460,
+        730
+      ],
+      "size": [
+        80,
+        32
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        360,
+        650
+      ],
+      "size": [
+        50,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "post",
+      "material": "wood",
+      "position": [
+        360,
+        520
+      ],
+      "size": [
+        44,
+        130
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e1",
+      "material": "grass",
+      "position": [
+        280,
+        390
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e2",
+      "material": "grass",
+      "position": [
+        440,
+        390
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "oil",
+      "material": "oil",
+      "position": [
+        360,
+        310
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f1",
+      "material": "paper",
+      "position": [
+        280,
+        200
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f2",
+      "material": "paper",
+      "position": [
+        440,
+        200
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "pl",
+      "material": "plastic",
+      "position": [
+        360,
+        120
+      ],
+      "size": [
+        48,
+        44
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g1",
+      "material": "paper",
+      "position": [
+        300,
+        50
+      ],
+      "size": [
+        42,
+        36
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g2",
+      "material": "paper",
+      "position": [
+        420,
+        50
+      ],
+      "size": [
+        42,
+        36
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

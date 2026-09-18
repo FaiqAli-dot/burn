@@ -4,14 +4,14 @@ extends RefCounted
 ## Builds an intended graph → places objects → decoys → spatial jitter,
 ## then callers verify with LevelSolver (real FireManager). Never fakes solvability.
 
-const GENERATOR_VERSION := "1.0.0"
+const GENERATOR_VERSION := "1.1.0"
 const GRID := 40.0
 const PLAY_LEFT := 100.0
 const PLAY_RIGHT := 620.0
 const PLAY_TOP := 90.0
 const PLAY_BOTTOM := 1100.0
 
-const ARCHETYPES := ["CLIMB", "CHAIN", "TRAP", "BRIDGE", "FORK"]
+const ARCHETYPES := ["CLIMB", "CHAIN", "TRAP", "BRIDGE", "FORK", "EXPLOSIVE"]
 const POLICIES := ["UNIQUE", "LIMITED", "OPEN"]
 
 
@@ -23,7 +23,8 @@ class GenParams:
 	var decoy_count: int = 2
 	var difficulty_target: float = 40.0
 	var solution_count: int = 1 ## preferred UNIQUE
-	var material_complexity: float = 0.55 ## 0=paper-heavy, 1=more wood
+	## 0–1: paper/wood → grass/fabric → plastic/oil when high.
+	var material_complexity: float = 0.55
 	var spatial_complexity: float = 0.4
 	var solution_policy: String = "UNIQUE"
 
@@ -57,8 +58,13 @@ func generate(params: GenParams) -> LevelCandidate:
 			objects = _gen_bridge(rng, params)
 		"FORK":
 			objects = _gen_fork(rng, params)
+		"EXPLOSIVE":
+			objects = _gen_explosive(rng, params)
 		_:
 			objects = _gen_climb(rng, params)
+
+	## Phase 2 material enrichment (keeps base topology; swaps some fill papers).
+	_enrich_materials(objects, rng, params.material_complexity, params.archetype)
 
 	## Spatial variation on ~40px grid (deterministic jitter).
 	_apply_spatial_variation(objects, rng, params.spatial_complexity)
@@ -105,6 +111,8 @@ func _hint_for(archetype: String) -> String:
 			return "Cross the beam."
 		"FORK":
 			return "Pick the branch that feeds both."
+		"EXPLOSIVE":
+			return "Feed the oil. Ride the blast."
 		_:
 			return "Burn 100%."
 
@@ -295,6 +303,70 @@ func _gen_fork(rng: RandomNumberGenerator, params: GenParams) -> Array:
 	objects.append(_obj("sol_13", "paper", Vector2(cx + 90, y - 410), _paper_size(rng), -2.0))
 	_add_decoys(objects, rng, params.decoy_count, true)
 	return objects
+
+
+func _gen_explosive(rng: RandomNumberGenerator, params: GenParams) -> Array:
+	## Intentional oil detonation bridge: paper fuse → oil → blast reaches far cluster.
+	var objects: Array = []
+	var cx := 340.0 + rng.randf() * 40.0
+	var y := PLAY_BOTTOM - 30.0
+	objects.append(_obj("sol_0", "paper", Vector2(cx, y), _paper_size(rng), -4.0))
+	objects.append(_obj("sol_1", "paper", Vector2(cx - 70, y - 85), _paper_size(rng), 6.0))
+	objects.append(_obj("sol_2", "paper", Vector2(cx + 70, y - 85), _paper_size(rng), -6.0))
+	objects.append(_obj("sol_3", "grass", Vector2(cx, y - 160), Vector2(44, 40), 0.0))
+	## Oil drum mid — blast should jump the metal gap to the upper cluster.
+	objects.append(_obj("sol_4", "oil", Vector2(cx, y - 250), Vector2(52, 52), 0.0))
+	## Non-flammable gap markers (obstacles, not goals).
+	objects.append(_obj("obs_metal", "metal", Vector2(cx - 90, y - 310), Vector2(60, 24), 0.0, false))
+	objects.append(_obj("obs_glass", "glass", Vector2(cx + 90, y - 310), Vector2(40, 50), 0.0, false))
+	## Far cluster within explosion radius of oil.
+	objects.append(_obj("sol_5", "paper", Vector2(cx - 100, y - 380), _paper_size(rng), 8.0))
+	objects.append(_obj("sol_6", "paper", Vector2(cx + 100, y - 380), _paper_size(rng), -8.0))
+	objects.append(_obj("sol_7", "fabric", Vector2(cx, y - 460), Vector2(90, 34), 0.0))
+	objects.append(_obj("sol_8", "paper", Vector2(cx - 80, y - 540), _paper_size(rng), 4.0))
+	objects.append(_obj("sol_9", "paper", Vector2(cx + 80, y - 540), _paper_size(rng), -4.0))
+	if params.material_complexity > 0.5:
+		objects.append(_obj("sol_10", "plastic", Vector2(cx, y - 620), Vector2(48, 44), 0.0))
+		objects.append(_obj("sol_11", "paper", Vector2(cx, y - 700), _paper_size(rng), 0.0))
+	_add_decoys(objects, rng, params.decoy_count, true)
+	return objects
+
+
+func _enrich_materials(objects: Array, rng: RandomNumberGenerator, complexity: float, archetype: String) -> void:
+	## low <0.45: untouched paper/wood. med: grass/fabric accents. high: plastic + occasional oil.
+	if complexity < 0.45 or archetype == "EXPLOSIVE":
+		return
+	var paper_idxs: Array = []
+	for i in objects.size():
+		var e: Dictionary = objects[i]
+		var id := String(e.get("id", ""))
+		if id == "sol_0" or id.begins_with("decoy") or id.begins_with("obs_"):
+			continue
+		if String(e.get("material", "")) == "paper":
+			paper_idxs.append(i)
+	if paper_idxs.is_empty():
+		return
+	## Medium: convert ~20% of fill papers to grass, ~10% to fabric.
+	if complexity >= 0.45:
+		var n_grass := maxi(1, int(paper_idxs.size() * 0.2))
+		for _g in n_grass:
+			if paper_idxs.is_empty():
+				break
+			var pick: int = int(paper_idxs[rng.randi_range(0, paper_idxs.size() - 1)])
+			paper_idxs.erase(pick)
+			objects[pick]["material"] = "grass"
+		if complexity >= 0.55 and not paper_idxs.is_empty():
+			var pick_f: int = int(paper_idxs[rng.randi_range(0, paper_idxs.size() - 1)])
+			paper_idxs.erase(pick_f)
+			objects[pick_f]["material"] = "fabric"
+			var s: Array = objects[pick_f].get("size", [48, 48])
+			objects[pick_f]["size"] = [maxf(float(s[0]), 64.0), minf(float(s[1]), 36.0)]
+	## High: one plastic late-chain piece.
+	if complexity >= 0.75 and not paper_idxs.is_empty():
+		var pick_p: int = int(paper_idxs[rng.randi_range(0, paper_idxs.size() - 1)])
+		objects[pick_p]["material"] = "plastic"
+	## Very high (non-EXPLOSIVE): optional oil node if topology has room — skip random oil;
+	## oil belongs in EXPLOSIVE intentional structures only.
 
 
 func _add_decoys(objects: Array, rng: RandomNumberGenerator, count: int, corners: bool) -> void:

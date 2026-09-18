@@ -1,0 +1,59 @@
+{
+  "id": "teach_01",
+  "display_name": "EMBER",
+  "hint": "Tap. Spread.",
+  "objects": [
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        360,
+        900
+      ],
+      "size": [
+        56,
+        56
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        300,
+        800
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 6
+    },
+    {
+      "id": "c",
+      "material": "paper",
+      "position": [
+        420,
+        800
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": -6
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        360,
+        700
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

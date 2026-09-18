@@ -1,0 +1,177 @@
+{
+  "id": "p2_trap",
+  "display_name": "BAIT",
+  "hint": "Side spark fails.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1040
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        280,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        440,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "c",
+      "material": "paper",
+      "position": [
+        220,
+        840
+      ],
+      "size": [
+        48,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        360,
+        850
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e",
+      "material": "paper",
+      "position": [
+        500,
+        840
+      ],
+      "size": [
+        48,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "beam",
+      "material": "wood",
+      "position": [
+        360,
+        740
+      ],
+      "size": [
+        280,
+        36
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f",
+      "material": "paper",
+      "position": [
+        260,
+        640
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g",
+      "material": "paper",
+      "position": [
+        460,
+        640
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "h",
+      "material": "paper",
+      "position": [
+        360,
+        550
+      ],
+      "size": [
+        50,
+        44
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "trap_a",
+      "material": "paper",
+      "position": [
+        620,
+        740
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": -14
+    },
+    {
+      "id": "trap_b",
+      "material": "grass",
+      "position": [
+        650,
+        660
+      ],
+      "size": [
+        40,
+        40
+      ],
+      "rotation_deg": 10
+    },
+    {
+      "id": "decoy",
+      "material": "wood",
+      "position": [
+        90,
+        980
+      ],
+      "size": [
+        58,
+        58
+      ],
+      "rotation_deg": 16,
+      "scoring": false
+    }
+  ]
+}

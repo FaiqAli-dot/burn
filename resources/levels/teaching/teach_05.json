@@ -1,0 +1,98 @@
+{
+  "id": "teach_05",
+  "display_name": "FIELD",
+  "hint": "Grass flashes fast.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        980
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g1",
+      "material": "grass",
+      "position": [
+        300,
+        880
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 4
+    },
+    {
+      "id": "g2",
+      "material": "grass",
+      "position": [
+        420,
+        880
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": -4
+    },
+    {
+      "id": "g3",
+      "material": "grass",
+      "position": [
+        360,
+        790
+      ],
+      "size": [
+        44,
+        40
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g4",
+      "material": "grass",
+      "position": [
+        280,
+        700
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 8
+    },
+    {
+      "id": "g5",
+      "material": "grass",
+      "position": [
+        440,
+        700
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": -8
+    },
+    {
+      "id": "p",
+      "material": "paper",
+      "position": [
+        360,
+        610
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

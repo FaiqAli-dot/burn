@@ -1,0 +1,137 @@
+{
+  "id": "p2_fabric",
+  "display_name": "DRAPE",
+  "hint": "Slow bridges.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1020
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p1",
+      "material": "paper",
+      "position": [
+        300,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p2",
+      "material": "paper",
+      "position": [
+        420,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f1",
+      "material": "fabric",
+      "position": [
+        360,
+        820
+      ],
+      "size": [
+        120,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p3",
+      "material": "paper",
+      "position": [
+        280,
+        720
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p4",
+      "material": "paper",
+      "position": [
+        440,
+        720
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f2",
+      "material": "fabric",
+      "position": [
+        360,
+        620
+      ],
+      "size": [
+        130,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p5",
+      "material": "paper",
+      "position": [
+        300,
+        520
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p6",
+      "material": "paper",
+      "position": [
+        420,
+        520
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p7",
+      "material": "paper",
+      "position": [
+        360,
+        430
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}
