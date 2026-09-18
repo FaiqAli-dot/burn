@@ -1,0 +1,16 @@
+{
+  "id": "SHOWCASE_05",
+  "display_name": "FLASHPOINT",
+  "hint": "Oil explosion FX",
+  "environment": "warehouse",
+  "visual_seed": 505,
+  "objects": [
+    {"id": "oil", "material": "oil", "position": [360, 720], "size": [56, 56]},
+    {"id": "p1", "material": "paper", "position": [250, 620], "size": [48, 48]},
+    {"id": "p2", "material": "paper", "position": [470, 620], "size": [48, 48]},
+    {"id": "p3", "material": "paper", "position": [360, 560], "size": [52, 52]},
+    {"id": "p4", "material": "paper", "position": [280, 820], "size": [44, 44]},
+    {"id": "p5", "material": "paper", "position": [440, 820], "size": [44, 44]},
+    {"id": "beam", "material": "metal", "position": [360, 920], "size": [200, 24], "scoring": false}
+  ]
+}

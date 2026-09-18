@@ -1,0 +1,15 @@
+{
+  "id": "SHOWCASE_01",
+  "display_name": "PAPER STACK",
+  "hint": "Material identity — paper",
+  "environment": "workshop",
+  "visual_seed": 101,
+  "objects": [
+    {"id": "a", "material": "paper", "position": [360, 860], "size": [64, 64], "rotation_deg": -4},
+    {"id": "b", "material": "paper", "position": [290, 760], "size": [52, 52], "rotation_deg": 8},
+    {"id": "c", "material": "paper", "position": [430, 760], "size": [52, 52], "rotation_deg": -6},
+    {"id": "d", "material": "paper", "position": [360, 660], "size": [58, 48], "rotation_deg": 2},
+    {"id": "e", "material": "paper", "position": [320, 560], "size": [44, 44], "rotation_deg": -10},
+    {"id": "f", "material": "paper", "position": [400, 560], "size": [44, 44], "rotation_deg": 12}
+  ]
+}

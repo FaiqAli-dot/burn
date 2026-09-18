@@ -1,0 +1,17 @@
+{
+  "id": "SHOWCASE_06",
+  "display_name": "COLD STEEL",
+  "hint": "Metal / glass / plastic — warehouse",
+  "environment": "warehouse",
+  "visual_seed": 606,
+  "objects": [
+    {"id": "rail", "material": "metal", "position": [360, 900], "size": [220, 22], "scoring": false},
+    {"id": "pane", "material": "glass", "position": [220, 720], "size": [40, 70], "scoring": false},
+    {"id": "pane2", "material": "glass", "position": [500, 720], "size": [40, 70], "scoring": false},
+    {"id": "crate", "material": "plastic", "position": [360, 780], "size": [60, 50]},
+    {"id": "p1", "material": "paper", "position": [300, 660], "size": [46, 46]},
+    {"id": "p2", "material": "paper", "position": [420, 660], "size": [46, 46]},
+    {"id": "p3", "material": "wood", "position": [360, 560], "size": [100, 32]},
+    {"id": "p4", "material": "paper", "position": [360, 460], "size": [48, 48]}
+  ]
+}

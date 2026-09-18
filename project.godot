@@ -6,8 +6,8 @@ config_version=5
 
 config/name="BURN"
 config/description="Hyper-casual fire puzzle. Tap once. Watch it burn."
-config/version="0.2.0"
-run/main_scene="res://scenes/main.tscn"
+config/version="0.3.0"
+run/main_scene="res://scenes/intro.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 

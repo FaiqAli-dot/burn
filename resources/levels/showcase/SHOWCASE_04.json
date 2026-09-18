@@ -1,0 +1,15 @@
+{
+  "id": "SHOWCASE_04",
+  "display_name": "CLOTH LINE",
+  "hint": "Fabric folds",
+  "environment": "workshop",
+  "visual_seed": 404,
+  "objects": [
+    {"id": "f1", "material": "fabric", "position": [280, 820], "size": [80, 40], "rotation_deg": -12},
+    {"id": "f2", "material": "fabric", "position": [400, 800], "size": [90, 38], "rotation_deg": 8},
+    {"id": "p1", "material": "paper", "position": [340, 700], "size": [50, 50]},
+    {"id": "f3", "material": "fabric", "position": [300, 600], "size": [70, 36], "rotation_deg": 4},
+    {"id": "f4", "material": "fabric", "position": [430, 610], "size": [76, 36], "rotation_deg": -6},
+    {"id": "f5", "material": "fabric", "position": [360, 500], "size": [100, 40], "rotation_deg": 2}
+  ]
+}

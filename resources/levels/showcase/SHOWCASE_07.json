@@ -1,0 +1,20 @@
+{
+  "id": "SHOWCASE_07",
+  "display_name": "NIGHT CHAIN",
+  "hint": "All materials + layered fire",
+  "environment": "forest",
+  "visual_seed": 707,
+  "objects": [
+    {"id": "spark", "material": "paper", "position": [360, 920], "size": [50, 50]},
+    {"id": "g1", "material": "grass", "position": [280, 840], "size": [42, 42]},
+    {"id": "g2", "material": "grass", "position": [440, 840], "size": [42, 42]},
+    {"id": "fab", "material": "fabric", "position": [360, 760], "size": [80, 36], "rotation_deg": -4},
+    {"id": "wood1", "material": "wood", "position": [280, 660], "size": [100, 30], "rotation_deg": 6},
+    {"id": "wood2", "material": "wood", "position": [450, 660], "size": [100, 30], "rotation_deg": -6},
+    {"id": "oil", "material": "oil", "position": [360, 580], "size": [48, 48]},
+    {"id": "plas", "material": "plastic", "position": [280, 480], "size": [48, 42]},
+    {"id": "top", "material": "paper", "position": [440, 480], "size": [48, 48]},
+    {"id": "glass", "material": "glass", "position": [360, 400], "size": [36, 56], "scoring": false},
+    {"id": "cap", "material": "paper", "position": [360, 320], "size": [52, 52]}
+  ]
+}
