@@ -1,14 +1,15 @@
 {
   "id": "SHOWCASE_02",
   "display_name": "TIMBER",
-  "hint": "Wood grain + slow burn",
+  "hint": "Art bench — wood grain",
   "environment": "workshop",
-  "visual_seed": 202,
+  "visual_seed": 2202,
   "objects": [
-    {"id": "plank1", "material": "wood", "position": [360, 900], "size": [160, 36], "rotation_deg": 0},
-    {"id": "plank2", "material": "wood", "position": [300, 780], "size": [120, 32], "rotation_deg": -8},
-    {"id": "plank3", "material": "wood", "position": [430, 780], "size": [110, 32], "rotation_deg": 10},
-    {"id": "kindling", "material": "paper", "position": [360, 680], "size": [48, 48], "rotation_deg": 0},
-    {"id": "plank4", "material": "wood", "position": [360, 560], "size": [140, 34], "rotation_deg": 3}
+    {"id": "plank_base", "material": "wood", "position": [360, 920], "size": [180, 42], "rotation_deg": 0},
+    {"id": "log_l", "material": "wood", "position": [250, 800], "size": [90, 70], "rotation_deg": -8},
+    {"id": "log_r", "material": "wood", "position": [470, 800], "size": [90, 70], "rotation_deg": 8},
+    {"id": "kindling", "material": "paper", "position": [360, 700], "size": [52, 52], "rotation_deg": 0},
+    {"id": "branch", "material": "wood", "position": [300, 580], "size": [120, 34], "rotation_deg": 12},
+    {"id": "crate", "material": "wood", "position": [440, 560], "size": [100, 48], "rotation_deg": -6}
   ]
 }

@@ -1,49 +1,49 @@
-# BURN — Visual Assets
+# BURN — Art Asset Library
 
-All art is **original** and hybrid: procedural textures + small shaders. No third-party / copyrighted game assets.
+All gameplay art is **original / generated for BURN**. No copyrighted, ripped, or random stock packs.
 
-## Folders
+## Style
+Premium stylized 2D illustration — soft painterly shading, readable silhouettes at gameplay size, warm dark atmospheres. Not photoreal, not pixel art, not emoji.
 
-| Path | Purpose |
-|------|---------|
-| `assets/textures/` | Reserved for optional baked exports (currently empty — textures generated at runtime) |
-| `shaders/` | `background.gdshader`, `burnable_surface.gdshader` |
-| `scripts/visual/` | Themes, presenter, particles, camera, composition, texture factory |
-| `resources/themes/` | Theme ids resolved in code via `EnvironmentTheme` factories |
-| `resources/levels/showcase/` | `SHOWCASE_01`–`07` art-review levels |
-| `icon.svg` | App / brand mark |
+## Layout
 
-## Procedural textures (`SoftTextureFactory`)
+```
+assets/
+  materials/{paper,wood,grass,fabric,oil,plastic,metal,glass}/  # 4 variants each
+  fire/{flames,embers,smoke,bursts,burn_masks}/
+  environments/{workshop,forest,warehouse}/backdrop.png
+  ui/branding/flame_mark.png
+  _src/   # generation sheets (Godot-ignored via .gdignore)
+```
 
-Generated per `visual_seed` (from level seed / id). Cached in `MaterialVisualCatalog`.
+## Materials (32 sprites)
+| Material | Variants |
+|----------|----------|
+| paper | sheet, folded, stack, torn |
+| wood | plank, log, branch, crate |
+| grass | clump, patch, tuft, blades |
+| fabric | strip, folded, hanging, bundle |
+| oil | puddle, trail, droplet, spill |
+| plastic | bottle, container, sheet, block |
+| metal | can, plate, sheet, beam |
+| glass | bottle, panel, shard, jar |
 
-- **paper** — fibers + soft folds
-- **wood** — grain bands + knots
-- **grass** — blade clusters
-- **fabric** — weave + fold shading
-- **oil** — glossy puddle falloff
-- **plastic** — specular band + micro scratches
-- **metal** — brushed steel bands
-- **glass** — rim light + transparency
+Variant selection is presentation-only: `hash(material + object_id + visual_seed)`.
 
-Particle soft blobs are also procedural (no PNG dependency).
+## Fire / FX
+- Flames: small, medium, large, side
+- Embers / smoke / burst plates
+- Burn masks: hole_irregular, crack, multihole, edge_eat (organic dissolve, not circular)
 
 ## Environments
+Workshop / Forest / Warehouse authored backdrop plates + shader wash / vignette.
 
-| Id | Mood |
-|----|------|
-| `workshop` | Warm charcoal, amber accent |
-| `forest` | Cool canopy green-gray |
-| `warehouse` | Cold steel night |
+## Integration
+- `MaterialVisualCatalog` loads authored PNGs
+- `MaterialVisualDefinition` separates appearance from gameplay `MaterialDefinition`
+- `BurnableObject` primary visual = `Sprite2D` + `burnable_sprite.gdshader` (polygons hidden)
+- Particles sample flame/ember/smoke textures
+- Intro / Main Menu use `ui/branding/flame_mark.png`
 
-Set via level JSON `"environment"` field, or archetype heuristic in `EnvironmentPresenter`.
-
-## Decorative props
-
-`CompositionLayer` spawns non-interactive silhouettes with `gameplay=false` / `decoration=true`. Never registered with `FireManager`.
-
-## Runtime rules
-
-- Visuals **observe** burn state only; they never write heat / ignition / progress.
-- `visual_seed` must not alter solver / generator determinism.
-- Particle pools stay modest for 60 FPS mobile targets.
+## License
+All files under `assets/` were authored/generated for this project. Free to ship with BURN.

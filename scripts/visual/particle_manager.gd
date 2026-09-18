@@ -87,7 +87,17 @@ func _make_particles(obj: BurnableObject, pname: String, amount: int, lifetime: 
 	particles.explosiveness = 0.05
 	particles.randomness = 0.45
 	particles.visibility_rect = Rect2(-120, -160, 240, 240)
-	particles.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
+	var authored: Texture2D = null
+	match pname:
+		"FlameCore":
+			authored = MaterialVisualCatalog.flame_tex("small")
+		"FlameOuter":
+			authored = MaterialVisualCatalog.flame_tex("medium")
+		"Embers":
+			authored = MaterialVisualCatalog.ember_tex()
+		"Smoke":
+			authored = MaterialVisualCatalog.smoke_tex(false)
+	particles.texture = authored if authored else (_soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16))
 	obj.add_child(particles)
 	return particles
 
@@ -237,7 +247,9 @@ func _burst(obj: BurnableObject, huge: bool) -> void:
 	burst.amount = int((30 if huge else 16) * amp)
 	burst.lifetime = 0.45 if huge else 0.32
 	burst.explosiveness = 0.95
-	burst.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
+	burst.texture = MaterialVisualCatalog.burst_tex()
+	if burst.texture == null:
+		burst.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
 	var mat := ParticleProcessMaterial.new()
 	mat.particle_flag_disable_z = true
 	mat.direction = Vector3(0, -1, 0)
@@ -245,8 +257,8 @@ func _burst(obj: BurnableObject, huge: bool) -> void:
 	mat.initial_velocity_min = 55.0 if huge else 40.0
 	mat.initial_velocity_max = 190.0 if huge else 125.0
 	mat.gravity = Vector3(0, 45, 0)
-	mat.scale_min = 0.45
-	mat.scale_max = 1.7 if huge else 1.1
+	mat.scale_min = 0.25
+	mat.scale_max = 0.7 if huge else 0.45
 	mat.color = Color(1.0, 0.88, 0.45, 1.0)
 	burst.process_material = mat
 	obj.add_child(burst)
@@ -311,15 +323,17 @@ func _on_explosion_fx(origin: Vector2, radius: float, _heat: float) -> void:
 	fireball.amount = int(clampf(radius * 0.4, 28.0, 72.0))
 	fireball.lifetime = 0.55
 	fireball.explosiveness = 1.0
-	fireball.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
+	fireball.texture = MaterialVisualCatalog.burst_tex()
+	if fireball.texture == null:
+		fireball.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
 	var mat := ParticleProcessMaterial.new()
 	mat.particle_flag_disable_z = true
 	mat.spread = 180.0
 	mat.initial_velocity_min = radius * 0.35
 	mat.initial_velocity_max = radius * 1.15
 	mat.gravity = Vector3(0, 70, 0)
-	mat.scale_min = 0.7
-	mat.scale_max = 2.0
+	mat.scale_min = 0.3
+	mat.scale_max = 0.85
 	mat.color_ramp = _ramp([
 		Color(1.0, 0.95, 0.7, 1.0),
 		Color(1.0, 0.55, 0.15, 0.9),
@@ -335,15 +349,17 @@ func _on_explosion_fx(origin: Vector2, radius: float, _heat: float) -> void:
 	smoke.amount = int(clampf(radius * 0.2, 12.0, 36.0))
 	smoke.lifetime = 0.9
 	smoke.explosiveness = 0.7
-	smoke.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
+	smoke.texture = MaterialVisualCatalog.smoke_tex(true)
+	if smoke.texture == null:
+		smoke.texture = _soft_tex if _soft_tex else SoftTextureFactory.soft_blob(16)
 	var sm := ParticleProcessMaterial.new()
 	sm.particle_flag_disable_z = true
 	sm.spread = 180.0
 	sm.initial_velocity_min = radius * 0.1
 	sm.initial_velocity_max = radius * 0.45
 	sm.gravity = Vector3(0, -15, 0)
-	sm.scale_min = 1.0
-	sm.scale_max = 2.4
+	sm.scale_min = 0.4
+	sm.scale_max = 1.0
 	sm.color = Color(0.25, 0.22, 0.2, 0.45)
 	smoke.process_material = sm
 	host.add_child(smoke)
