@@ -19,6 +19,20 @@ Hyper-casual fire puzzle. Tap once. Watch it burn.
 
 Viewport is **720×1280** portrait with canvas stretch.
 
+### Headless / Linux VM tip
+
+If the windowed editor fails to start Vulkan on a headless/VM display:
+
+```bash
+godot --path . --rendering-method gl_compatibility --rendering-driver opengl3
+```
+
+Validate Level 1 ignition chain without a GUI:
+
+```bash
+godot --headless --path . -s res://tools/sim_validate.gd
+```
+
 ## Phase 1 controls
 
 | Input | Action |
