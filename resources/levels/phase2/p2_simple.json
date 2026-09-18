@@ -1,0 +1,111 @@
+{
+  "id": "p2_simple",
+  "display_name": "CLEAN",
+  "hint": "Simple climb.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1020
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        290,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 5
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        430,
+        920
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -5
+    },
+    {
+      "id": "c",
+      "material": "paper",
+      "position": [
+        360,
+        820
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "beam",
+      "material": "wood",
+      "position": [
+        360,
+        720
+      ],
+      "size": [
+        220,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        300,
+        620
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e",
+      "material": "paper",
+      "position": [
+        420,
+        620
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f",
+      "material": "paper",
+      "position": [
+        360,
+        520
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

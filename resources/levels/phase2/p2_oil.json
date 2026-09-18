@@ -1,0 +1,137 @@
+{
+  "id": "p2_oil",
+  "display_name": "SLICK",
+  "hint": "Oil pops mid-chain.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1040
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        300,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        420,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "c",
+      "material": "grass",
+      "position": [
+        360,
+        860
+      ],
+      "size": [
+        44,
+        40
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "oil",
+      "material": "oil",
+      "position": [
+        360,
+        760
+      ],
+      "size": [
+        54,
+        54
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        270,
+        620
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e",
+      "material": "paper",
+      "position": [
+        450,
+        620
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f",
+      "material": "paper",
+      "position": [
+        360,
+        530
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g",
+      "material": "paper",
+      "position": [
+        300,
+        440
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "h",
+      "material": "paper",
+      "position": [
+        420,
+        440
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

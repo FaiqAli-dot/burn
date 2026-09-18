@@ -1,0 +1,111 @@
+{
+  "id": "teach_06",
+  "display_name": "CLOTH",
+  "hint": "Fabric burns slow.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1000
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p1",
+      "material": "paper",
+      "position": [
+        300,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 5
+    },
+    {
+      "id": "p2",
+      "material": "paper",
+      "position": [
+        420,
+        900
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": -5
+    },
+    {
+      "id": "f1",
+      "material": "fabric",
+      "position": [
+        360,
+        800
+      ],
+      "size": [
+        100,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p3",
+      "material": "paper",
+      "position": [
+        300,
+        700
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p4",
+      "material": "paper",
+      "position": [
+        420,
+        700
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f2",
+      "material": "fabric",
+      "position": [
+        360,
+        600
+      ],
+      "size": [
+        110,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p5",
+      "material": "paper",
+      "position": [
+        360,
+        500
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

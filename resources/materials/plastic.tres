@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="MaterialDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/fire/material_definition.gd" id="1_mat"]
+
+[resource]
+script = ExtResource("1_mat")
+id = &"plastic"
+display_name = "Plastic"
+flammability = 0.55
+ignition_threshold = 38.0
+heat_output = 48.0
+heat_radius = 88.0
+burn_duration = 4.2
+char_duration = 1.2
+ignition_flash = 0.8
+is_flammable = true
+player_ignitable = true
+counts_toward_burn_goal = true
+explodes = false
+base_color = Color(0.35, 0.55, 0.72, 1)
+edge_color = Color(0.25, 0.4, 0.55, 1)
+burn_tint = Color(0.9, 0.45, 0.25, 1)
+char_color = Color(0.1, 0.1, 0.12, 1)
+default_size = Vector2(50, 44)
+particle_scale = 1.05

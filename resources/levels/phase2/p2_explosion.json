@@ -1,0 +1,178 @@
+{
+  "id": "p2_explosion",
+  "display_name": "BLAST",
+  "hint": "Blast the gap.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1040
+      ],
+      "size": [
+        52,
+        52
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "a",
+      "material": "paper",
+      "position": [
+        300,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "b",
+      "material": "paper",
+      "position": [
+        420,
+        940
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "c",
+      "material": "grass",
+      "position": [
+        360,
+        860
+      ],
+      "size": [
+        44,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "oil",
+      "material": "oil",
+      "position": [
+        360,
+        760
+      ],
+      "size": [
+        56,
+        56
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "m1",
+      "material": "metal",
+      "position": [
+        280,
+        700
+      ],
+      "size": [
+        70,
+        22
+      ],
+      "rotation_deg": 0,
+      "scoring": false
+    },
+    {
+      "id": "m2",
+      "material": "metal",
+      "position": [
+        440,
+        700
+      ],
+      "size": [
+        70,
+        22
+      ],
+      "rotation_deg": 0,
+      "scoring": false
+    },
+    {
+      "id": "d",
+      "material": "paper",
+      "position": [
+        280,
+        620
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "e",
+      "material": "paper",
+      "position": [
+        440,
+        620
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "f",
+      "material": "fabric",
+      "position": [
+        360,
+        530
+      ],
+      "size": [
+        100,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g",
+      "material": "paper",
+      "position": [
+        300,
+        440
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "h",
+      "material": "paper",
+      "position": [
+        420,
+        440
+      ],
+      "size": [
+        46,
+        46
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "i",
+      "material": "paper",
+      "position": [
+        360,
+        350
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}

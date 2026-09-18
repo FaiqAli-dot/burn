@@ -1,0 +1,163 @@
+{
+  "id": "p2_grass",
+  "display_name": "MEADOW",
+  "hint": "Grass cascade.",
+  "objects": [
+    {
+      "id": "s",
+      "material": "paper",
+      "position": [
+        360,
+        1040
+      ],
+      "size": [
+        50,
+        50
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g1",
+      "material": "grass",
+      "position": [
+        300,
+        940
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g2",
+      "material": "grass",
+      "position": [
+        420,
+        940
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g3",
+      "material": "grass",
+      "position": [
+        260,
+        850
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g4",
+      "material": "grass",
+      "position": [
+        360,
+        840
+      ],
+      "size": [
+        44,
+        40
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g5",
+      "material": "grass",
+      "position": [
+        460,
+        850
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g6",
+      "material": "grass",
+      "position": [
+        300,
+        750
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g7",
+      "material": "grass",
+      "position": [
+        420,
+        750
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "beam",
+      "material": "wood",
+      "position": [
+        360,
+        660
+      ],
+      "size": [
+        240,
+        34
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g8",
+      "material": "grass",
+      "position": [
+        300,
+        560
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "g9",
+      "material": "grass",
+      "position": [
+        420,
+        560
+      ],
+      "size": [
+        42,
+        42
+      ],
+      "rotation_deg": 0
+    },
+    {
+      "id": "p",
+      "material": "paper",
+      "position": [
+        360,
+        470
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "rotation_deg": 0
+    }
+  ]
+}
