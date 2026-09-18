@@ -1,0 +1,4005 @@
+{
+	"count": 400,
+	"entries": [
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1000",
+			"path": "res://resources/levels/generated/burn_000001.json",
+			"policy": "OPEN",
+			"seed": 1000,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.7,
+			"id": "burn_gen_chain_1001",
+			"path": "res://resources/levels/generated/burn_000002.json",
+			"policy": "OPEN",
+			"seed": 1001,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1002",
+			"path": "res://resources/levels/generated/burn_000003.json",
+			"policy": "OPEN",
+			"seed": 1002,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1003",
+			"path": "res://resources/levels/generated/burn_000004.json",
+			"policy": "OPEN",
+			"seed": 1003,
+			"solution_count": 11
+		},
+		{
+			"archetype": "FORK",
+			"band": "medium",
+			"difficulty": 46,
+			"id": "burn_gen_fork_1004",
+			"path": "res://resources/levels/generated/burn_000005.json",
+			"policy": "OPEN",
+			"seed": 1004,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1005",
+			"path": "res://resources/levels/generated/burn_000006.json",
+			"policy": "OPEN",
+			"seed": 1005,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1006",
+			"path": "res://resources/levels/generated/burn_000007.json",
+			"policy": "OPEN",
+			"seed": 1006,
+			"solution_count": 10
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1008",
+			"path": "res://resources/levels/generated/burn_000008.json",
+			"policy": "OPEN",
+			"seed": 1008,
+			"solution_count": 11
+		},
+		{
+			"archetype": "FORK",
+			"band": "medium",
+			"difficulty": 46,
+			"id": "burn_gen_fork_1009",
+			"path": "res://resources/levels/generated/burn_000009.json",
+			"policy": "OPEN",
+			"seed": 1009,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 50.5,
+			"id": "burn_gen_climb_1010",
+			"path": "res://resources/levels/generated/burn_000010.json",
+			"policy": "OPEN",
+			"seed": 1010,
+			"solution_count": 18
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1011",
+			"path": "res://resources/levels/generated/burn_000011.json",
+			"policy": "OPEN",
+			"seed": 1011,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1012",
+			"path": "res://resources/levels/generated/burn_000012.json",
+			"policy": "OPEN",
+			"seed": 1012,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1013",
+			"path": "res://resources/levels/generated/burn_000013.json",
+			"policy": "OPEN",
+			"seed": 1013,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1015",
+			"path": "res://resources/levels/generated/burn_000014.json",
+			"policy": "OPEN",
+			"seed": 1015,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1016",
+			"path": "res://resources/levels/generated/burn_000015.json",
+			"policy": "OPEN",
+			"seed": 1016,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1017",
+			"path": "res://resources/levels/generated/burn_000016.json",
+			"policy": "OPEN",
+			"seed": 1017,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1018",
+			"path": "res://resources/levels/generated/burn_000017.json",
+			"policy": "OPEN",
+			"seed": 1018,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1020",
+			"path": "res://resources/levels/generated/burn_000018.json",
+			"policy": "OPEN",
+			"seed": 1020,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1021",
+			"path": "res://resources/levels/generated/burn_000019.json",
+			"policy": "OPEN",
+			"seed": 1021,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1022",
+			"path": "res://resources/levels/generated/burn_000020.json",
+			"policy": "OPEN",
+			"seed": 1022,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1023",
+			"path": "res://resources/levels/generated/burn_000021.json",
+			"policy": "OPEN",
+			"seed": 1023,
+			"solution_count": 11
+		},
+		{
+			"archetype": "FORK",
+			"band": "medium",
+			"difficulty": 46,
+			"id": "burn_gen_fork_1024",
+			"path": "res://resources/levels/generated/burn_000022.json",
+			"policy": "OPEN",
+			"seed": 1024,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1025",
+			"path": "res://resources/levels/generated/burn_000023.json",
+			"policy": "OPEN",
+			"seed": 1025,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1026",
+			"path": "res://resources/levels/generated/burn_000024.json",
+			"policy": "OPEN",
+			"seed": 1026,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1028",
+			"path": "res://resources/levels/generated/burn_000025.json",
+			"policy": "OPEN",
+			"seed": 1028,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1030",
+			"path": "res://resources/levels/generated/burn_000026.json",
+			"policy": "OPEN",
+			"seed": 1030,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1031",
+			"path": "res://resources/levels/generated/burn_000027.json",
+			"policy": "OPEN",
+			"seed": 1031,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1032",
+			"path": "res://resources/levels/generated/burn_000028.json",
+			"policy": "OPEN",
+			"seed": 1032,
+			"solution_count": 21
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1033",
+			"path": "res://resources/levels/generated/burn_000029.json",
+			"policy": "OPEN",
+			"seed": 1033,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1035",
+			"path": "res://resources/levels/generated/burn_000030.json",
+			"policy": "OPEN",
+			"seed": 1035,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1036",
+			"path": "res://resources/levels/generated/burn_000031.json",
+			"policy": "OPEN",
+			"seed": 1036,
+			"solution_count": 10
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1037",
+			"path": "res://resources/levels/generated/burn_000032.json",
+			"policy": "OPEN",
+			"seed": 1037,
+			"solution_count": 19
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1040",
+			"path": "res://resources/levels/generated/burn_000033.json",
+			"policy": "OPEN",
+			"seed": 1040,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1041",
+			"path": "res://resources/levels/generated/burn_000034.json",
+			"policy": "OPEN",
+			"seed": 1041,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1045",
+			"path": "res://resources/levels/generated/burn_000035.json",
+			"policy": "OPEN",
+			"seed": 1045,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.5,
+			"id": "burn_gen_chain_1046",
+			"path": "res://resources/levels/generated/burn_000036.json",
+			"policy": "OPEN",
+			"seed": 1046,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1047",
+			"path": "res://resources/levels/generated/burn_000037.json",
+			"policy": "OPEN",
+			"seed": 1047,
+			"solution_count": 19
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1050",
+			"path": "res://resources/levels/generated/burn_000038.json",
+			"policy": "OPEN",
+			"seed": 1050,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1051",
+			"path": "res://resources/levels/generated/burn_000039.json",
+			"policy": "OPEN",
+			"seed": 1051,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1052",
+			"path": "res://resources/levels/generated/burn_000040.json",
+			"policy": "OPEN",
+			"seed": 1052,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1055",
+			"path": "res://resources/levels/generated/burn_000041.json",
+			"policy": "OPEN",
+			"seed": 1055,
+			"solution_count": 7
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1056",
+			"path": "res://resources/levels/generated/burn_000042.json",
+			"policy": "OPEN",
+			"seed": 1056,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1058",
+			"path": "res://resources/levels/generated/burn_000043.json",
+			"policy": "OPEN",
+			"seed": 1058,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1060",
+			"path": "res://resources/levels/generated/burn_000044.json",
+			"policy": "OPEN",
+			"seed": 1060,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1061",
+			"path": "res://resources/levels/generated/burn_000045.json",
+			"policy": "OPEN",
+			"seed": 1061,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1062",
+			"path": "res://resources/levels/generated/burn_000046.json",
+			"policy": "OPEN",
+			"seed": 1062,
+			"solution_count": 19
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1065",
+			"path": "res://resources/levels/generated/burn_000047.json",
+			"policy": "OPEN",
+			"seed": 1065,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.1,
+			"id": "burn_gen_chain_1066",
+			"path": "res://resources/levels/generated/burn_000048.json",
+			"policy": "OPEN",
+			"seed": 1066,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1067",
+			"path": "res://resources/levels/generated/burn_000049.json",
+			"policy": "OPEN",
+			"seed": 1067,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1068",
+			"path": "res://resources/levels/generated/burn_000050.json",
+			"policy": "OPEN",
+			"seed": 1068,
+			"solution_count": 11
+		},
+		{
+			"archetype": "FORK",
+			"band": "medium",
+			"difficulty": 46,
+			"id": "burn_gen_fork_1069",
+			"path": "res://resources/levels/generated/burn_000051.json",
+			"policy": "OPEN",
+			"seed": 1069,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1071",
+			"path": "res://resources/levels/generated/burn_000052.json",
+			"policy": "OPEN",
+			"seed": 1071,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1072",
+			"path": "res://resources/levels/generated/burn_000053.json",
+			"policy": "OPEN",
+			"seed": 1072,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1075",
+			"path": "res://resources/levels/generated/burn_000054.json",
+			"policy": "OPEN",
+			"seed": 1075,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 47,
+			"id": "burn_gen_chain_1076",
+			"path": "res://resources/levels/generated/burn_000055.json",
+			"policy": "OPEN",
+			"seed": 1076,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1077",
+			"path": "res://resources/levels/generated/burn_000056.json",
+			"policy": "OPEN",
+			"seed": 1077,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1078",
+			"path": "res://resources/levels/generated/burn_000057.json",
+			"policy": "OPEN",
+			"seed": 1078,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1080",
+			"path": "res://resources/levels/generated/burn_000058.json",
+			"policy": "OPEN",
+			"seed": 1080,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.6,
+			"id": "burn_gen_chain_1081",
+			"path": "res://resources/levels/generated/burn_000059.json",
+			"policy": "OPEN",
+			"seed": 1081,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1082",
+			"path": "res://resources/levels/generated/burn_000060.json",
+			"policy": "OPEN",
+			"seed": 1082,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1085",
+			"path": "res://resources/levels/generated/burn_000061.json",
+			"policy": "OPEN",
+			"seed": 1085,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1086",
+			"path": "res://resources/levels/generated/burn_000062.json",
+			"policy": "OPEN",
+			"seed": 1086,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1088",
+			"path": "res://resources/levels/generated/burn_000063.json",
+			"policy": "OPEN",
+			"seed": 1088,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1090",
+			"path": "res://resources/levels/generated/burn_000064.json",
+			"policy": "OPEN",
+			"seed": 1090,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1091",
+			"path": "res://resources/levels/generated/burn_000065.json",
+			"policy": "OPEN",
+			"seed": 1091,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1092",
+			"path": "res://resources/levels/generated/burn_000066.json",
+			"policy": "OPEN",
+			"seed": 1092,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1095",
+			"path": "res://resources/levels/generated/burn_000067.json",
+			"policy": "OPEN",
+			"seed": 1095,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1096",
+			"path": "res://resources/levels/generated/burn_000068.json",
+			"policy": "OPEN",
+			"seed": 1096,
+			"solution_count": 11
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1098",
+			"path": "res://resources/levels/generated/burn_000069.json",
+			"policy": "OPEN",
+			"seed": 1098,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1100",
+			"path": "res://resources/levels/generated/burn_000070.json",
+			"policy": "OPEN",
+			"seed": 1100,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1101",
+			"path": "res://resources/levels/generated/burn_000071.json",
+			"policy": "OPEN",
+			"seed": 1101,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1102",
+			"path": "res://resources/levels/generated/burn_000072.json",
+			"policy": "OPEN",
+			"seed": 1102,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1103",
+			"path": "res://resources/levels/generated/burn_000073.json",
+			"policy": "OPEN",
+			"seed": 1103,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.5,
+			"id": "burn_gen_chain_1106",
+			"path": "res://resources/levels/generated/burn_000074.json",
+			"policy": "OPEN",
+			"seed": 1106,
+			"solution_count": 14
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1108",
+			"path": "res://resources/levels/generated/burn_000075.json",
+			"policy": "OPEN",
+			"seed": 1108,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1110",
+			"path": "res://resources/levels/generated/burn_000076.json",
+			"policy": "OPEN",
+			"seed": 1110,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1111",
+			"path": "res://resources/levels/generated/burn_000077.json",
+			"policy": "OPEN",
+			"seed": 1111,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1115",
+			"path": "res://resources/levels/generated/burn_000078.json",
+			"policy": "OPEN",
+			"seed": 1115,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1116",
+			"path": "res://resources/levels/generated/burn_000079.json",
+			"policy": "OPEN",
+			"seed": 1116,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1121",
+			"path": "res://resources/levels/generated/burn_000080.json",
+			"policy": "OPEN",
+			"seed": 1121,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1122",
+			"path": "res://resources/levels/generated/burn_000081.json",
+			"policy": "OPEN",
+			"seed": 1122,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1123",
+			"path": "res://resources/levels/generated/burn_000082.json",
+			"policy": "OPEN",
+			"seed": 1123,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1125",
+			"path": "res://resources/levels/generated/burn_000083.json",
+			"policy": "OPEN",
+			"seed": 1125,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.6,
+			"id": "burn_gen_chain_1126",
+			"path": "res://resources/levels/generated/burn_000084.json",
+			"policy": "OPEN",
+			"seed": 1126,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1127",
+			"path": "res://resources/levels/generated/burn_000085.json",
+			"policy": "OPEN",
+			"seed": 1127,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1130",
+			"path": "res://resources/levels/generated/burn_000086.json",
+			"policy": "OPEN",
+			"seed": 1130,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1131",
+			"path": "res://resources/levels/generated/burn_000087.json",
+			"policy": "OPEN",
+			"seed": 1131,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1135",
+			"path": "res://resources/levels/generated/burn_000088.json",
+			"policy": "OPEN",
+			"seed": 1135,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 47,
+			"id": "burn_gen_chain_1136",
+			"path": "res://resources/levels/generated/burn_000089.json",
+			"policy": "OPEN",
+			"seed": 1136,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_chain_1141",
+			"path": "res://resources/levels/generated/burn_000090.json",
+			"policy": "OPEN",
+			"seed": 1141,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1142",
+			"path": "res://resources/levels/generated/burn_000091.json",
+			"policy": "OPEN",
+			"seed": 1142,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1145",
+			"path": "res://resources/levels/generated/burn_000092.json",
+			"policy": "OPEN",
+			"seed": 1145,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1146",
+			"path": "res://resources/levels/generated/burn_000093.json",
+			"policy": "OPEN",
+			"seed": 1146,
+			"solution_count": 12
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1148",
+			"path": "res://resources/levels/generated/burn_000094.json",
+			"policy": "OPEN",
+			"seed": 1148,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 39.5,
+			"id": "burn_gen_chain_1151",
+			"path": "res://resources/levels/generated/burn_000095.json",
+			"policy": "OPEN",
+			"seed": 1151,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1152",
+			"path": "res://resources/levels/generated/burn_000096.json",
+			"policy": "OPEN",
+			"seed": 1152,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1155",
+			"path": "res://resources/levels/generated/burn_000097.json",
+			"policy": "OPEN",
+			"seed": 1155,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1156",
+			"path": "res://resources/levels/generated/burn_000098.json",
+			"policy": "OPEN",
+			"seed": 1156,
+			"solution_count": 10
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1157",
+			"path": "res://resources/levels/generated/burn_000099.json",
+			"policy": "OPEN",
+			"seed": 1157,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1160",
+			"path": "res://resources/levels/generated/burn_000100.json",
+			"policy": "OPEN",
+			"seed": 1160,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1161",
+			"path": "res://resources/levels/generated/burn_000101.json",
+			"policy": "OPEN",
+			"seed": 1161,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1162",
+			"path": "res://resources/levels/generated/burn_000102.json",
+			"policy": "OPEN",
+			"seed": 1162,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1165",
+			"path": "res://resources/levels/generated/burn_000103.json",
+			"policy": "OPEN",
+			"seed": 1165,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.5,
+			"id": "burn_gen_chain_1166",
+			"path": "res://resources/levels/generated/burn_000104.json",
+			"policy": "OPEN",
+			"seed": 1166,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1167",
+			"path": "res://resources/levels/generated/burn_000105.json",
+			"policy": "OPEN",
+			"seed": 1167,
+			"solution_count": 21
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1168",
+			"path": "res://resources/levels/generated/burn_000106.json",
+			"policy": "OPEN",
+			"seed": 1168,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1170",
+			"path": "res://resources/levels/generated/burn_000107.json",
+			"policy": "OPEN",
+			"seed": 1170,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1171",
+			"path": "res://resources/levels/generated/burn_000108.json",
+			"policy": "OPEN",
+			"seed": 1171,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1172",
+			"path": "res://resources/levels/generated/burn_000109.json",
+			"policy": "OPEN",
+			"seed": 1172,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1175",
+			"path": "res://resources/levels/generated/burn_000110.json",
+			"policy": "OPEN",
+			"seed": 1175,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1176",
+			"path": "res://resources/levels/generated/burn_000111.json",
+			"policy": "OPEN",
+			"seed": 1176,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1177",
+			"path": "res://resources/levels/generated/burn_000112.json",
+			"policy": "OPEN",
+			"seed": 1177,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1180",
+			"path": "res://resources/levels/generated/burn_000113.json",
+			"policy": "OPEN",
+			"seed": 1180,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 37.4,
+			"id": "burn_gen_chain_1181",
+			"path": "res://resources/levels/generated/burn_000114.json",
+			"policy": "OPEN",
+			"seed": 1181,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1185",
+			"path": "res://resources/levels/generated/burn_000115.json",
+			"policy": "OPEN",
+			"seed": 1185,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.4,
+			"id": "burn_gen_chain_1186",
+			"path": "res://resources/levels/generated/burn_000116.json",
+			"policy": "OPEN",
+			"seed": 1186,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1187",
+			"path": "res://resources/levels/generated/burn_000117.json",
+			"policy": "OPEN",
+			"seed": 1187,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1188",
+			"path": "res://resources/levels/generated/burn_000118.json",
+			"policy": "OPEN",
+			"seed": 1188,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1190",
+			"path": "res://resources/levels/generated/burn_000119.json",
+			"policy": "OPEN",
+			"seed": 1190,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1191",
+			"path": "res://resources/levels/generated/burn_000120.json",
+			"policy": "OPEN",
+			"seed": 1191,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1195",
+			"path": "res://resources/levels/generated/burn_000121.json",
+			"policy": "OPEN",
+			"seed": 1195,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1196",
+			"path": "res://resources/levels/generated/burn_000122.json",
+			"policy": "OPEN",
+			"seed": 1196,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1197",
+			"path": "res://resources/levels/generated/burn_000123.json",
+			"policy": "OPEN",
+			"seed": 1197,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1200",
+			"path": "res://resources/levels/generated/burn_000124.json",
+			"policy": "OPEN",
+			"seed": 1200,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1201",
+			"path": "res://resources/levels/generated/burn_000125.json",
+			"policy": "OPEN",
+			"seed": 1201,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1205",
+			"path": "res://resources/levels/generated/burn_000126.json",
+			"policy": "OPEN",
+			"seed": 1205,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.8,
+			"id": "burn_gen_chain_1206",
+			"path": "res://resources/levels/generated/burn_000127.json",
+			"policy": "OPEN",
+			"seed": 1206,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1207",
+			"path": "res://resources/levels/generated/burn_000128.json",
+			"policy": "OPEN",
+			"seed": 1207,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1210",
+			"path": "res://resources/levels/generated/burn_000129.json",
+			"policy": "OPEN",
+			"seed": 1210,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.7,
+			"id": "burn_gen_chain_1211",
+			"path": "res://resources/levels/generated/burn_000130.json",
+			"policy": "OPEN",
+			"seed": 1211,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1212",
+			"path": "res://resources/levels/generated/burn_000131.json",
+			"policy": "OPEN",
+			"seed": 1212,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1213",
+			"path": "res://resources/levels/generated/burn_000132.json",
+			"policy": "OPEN",
+			"seed": 1213,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1215",
+			"path": "res://resources/levels/generated/burn_000133.json",
+			"policy": "OPEN",
+			"seed": 1215,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1216",
+			"path": "res://resources/levels/generated/burn_000134.json",
+			"policy": "OPEN",
+			"seed": 1216,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1217",
+			"path": "res://resources/levels/generated/burn_000135.json",
+			"policy": "OPEN",
+			"seed": 1217,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1220",
+			"path": "res://resources/levels/generated/burn_000136.json",
+			"policy": "OPEN",
+			"seed": 1220,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1221",
+			"path": "res://resources/levels/generated/burn_000137.json",
+			"policy": "OPEN",
+			"seed": 1221,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1222",
+			"path": "res://resources/levels/generated/burn_000138.json",
+			"policy": "OPEN",
+			"seed": 1222,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1225",
+			"path": "res://resources/levels/generated/burn_000139.json",
+			"policy": "OPEN",
+			"seed": 1225,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 47,
+			"id": "burn_gen_chain_1226",
+			"path": "res://resources/levels/generated/burn_000140.json",
+			"policy": "OPEN",
+			"seed": 1226,
+			"solution_count": 16
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1228",
+			"path": "res://resources/levels/generated/burn_000141.json",
+			"policy": "OPEN",
+			"seed": 1228,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.9,
+			"id": "burn_gen_chain_1231",
+			"path": "res://resources/levels/generated/burn_000142.json",
+			"policy": "OPEN",
+			"seed": 1231,
+			"solution_count": 14
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1233",
+			"path": "res://resources/levels/generated/burn_000143.json",
+			"policy": "OPEN",
+			"seed": 1233,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1235",
+			"path": "res://resources/levels/generated/burn_000144.json",
+			"policy": "OPEN",
+			"seed": 1235,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1236",
+			"path": "res://resources/levels/generated/burn_000145.json",
+			"policy": "OPEN",
+			"seed": 1236,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1238",
+			"path": "res://resources/levels/generated/burn_000146.json",
+			"policy": "OPEN",
+			"seed": 1238,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1241",
+			"path": "res://resources/levels/generated/burn_000147.json",
+			"policy": "OPEN",
+			"seed": 1241,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1242",
+			"path": "res://resources/levels/generated/burn_000148.json",
+			"policy": "OPEN",
+			"seed": 1242,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1245",
+			"path": "res://resources/levels/generated/burn_000149.json",
+			"policy": "OPEN",
+			"seed": 1245,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.7,
+			"id": "burn_gen_chain_1246",
+			"path": "res://resources/levels/generated/burn_000150.json",
+			"policy": "OPEN",
+			"seed": 1246,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1250",
+			"path": "res://resources/levels/generated/burn_000151.json",
+			"policy": "OPEN",
+			"seed": 1250,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1251",
+			"path": "res://resources/levels/generated/burn_000152.json",
+			"policy": "OPEN",
+			"seed": 1251,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1252",
+			"path": "res://resources/levels/generated/burn_000153.json",
+			"policy": "OPEN",
+			"seed": 1252,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1255",
+			"path": "res://resources/levels/generated/burn_000154.json",
+			"policy": "OPEN",
+			"seed": 1255,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1256",
+			"path": "res://resources/levels/generated/burn_000155.json",
+			"policy": "OPEN",
+			"seed": 1256,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1257",
+			"path": "res://resources/levels/generated/burn_000156.json",
+			"policy": "OPEN",
+			"seed": 1257,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1260",
+			"path": "res://resources/levels/generated/burn_000157.json",
+			"policy": "OPEN",
+			"seed": 1260,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_chain_1261",
+			"path": "res://resources/levels/generated/burn_000158.json",
+			"policy": "OPEN",
+			"seed": 1261,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1266",
+			"path": "res://resources/levels/generated/burn_000159.json",
+			"policy": "OPEN",
+			"seed": 1266,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1267",
+			"path": "res://resources/levels/generated/burn_000160.json",
+			"policy": "OPEN",
+			"seed": 1267,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1268",
+			"path": "res://resources/levels/generated/burn_000161.json",
+			"policy": "OPEN",
+			"seed": 1268,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1271",
+			"path": "res://resources/levels/generated/burn_000162.json",
+			"policy": "OPEN",
+			"seed": 1271,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1272",
+			"path": "res://resources/levels/generated/burn_000163.json",
+			"policy": "OPEN",
+			"seed": 1272,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1273",
+			"path": "res://resources/levels/generated/burn_000164.json",
+			"policy": "OPEN",
+			"seed": 1273,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1275",
+			"path": "res://resources/levels/generated/burn_000165.json",
+			"policy": "OPEN",
+			"seed": 1275,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1276",
+			"path": "res://resources/levels/generated/burn_000166.json",
+			"policy": "OPEN",
+			"seed": 1276,
+			"solution_count": 11
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1278",
+			"path": "res://resources/levels/generated/burn_000167.json",
+			"policy": "OPEN",
+			"seed": 1278,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1280",
+			"path": "res://resources/levels/generated/burn_000168.json",
+			"policy": "OPEN",
+			"seed": 1280,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1281",
+			"path": "res://resources/levels/generated/burn_000169.json",
+			"policy": "OPEN",
+			"seed": 1281,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1286",
+			"path": "res://resources/levels/generated/burn_000170.json",
+			"policy": "OPEN",
+			"seed": 1286,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1287",
+			"path": "res://resources/levels/generated/burn_000171.json",
+			"policy": "OPEN",
+			"seed": 1287,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1290",
+			"path": "res://resources/levels/generated/burn_000172.json",
+			"policy": "OPEN",
+			"seed": 1290,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1291",
+			"path": "res://resources/levels/generated/burn_000173.json",
+			"policy": "OPEN",
+			"seed": 1291,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1292",
+			"path": "res://resources/levels/generated/burn_000174.json",
+			"policy": "OPEN",
+			"seed": 1292,
+			"solution_count": 21
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1295",
+			"path": "res://resources/levels/generated/burn_000175.json",
+			"policy": "OPEN",
+			"seed": 1295,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1296",
+			"path": "res://resources/levels/generated/burn_000176.json",
+			"policy": "OPEN",
+			"seed": 1296,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1300",
+			"path": "res://resources/levels/generated/burn_000177.json",
+			"policy": "OPEN",
+			"seed": 1300,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1301",
+			"path": "res://resources/levels/generated/burn_000178.json",
+			"policy": "OPEN",
+			"seed": 1301,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1305",
+			"path": "res://resources/levels/generated/burn_000179.json",
+			"policy": "OPEN",
+			"seed": 1305,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1307",
+			"path": "res://resources/levels/generated/burn_000180.json",
+			"policy": "OPEN",
+			"seed": 1307,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1310",
+			"path": "res://resources/levels/generated/burn_000181.json",
+			"policy": "OPEN",
+			"seed": 1310,
+			"solution_count": 17
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1313",
+			"path": "res://resources/levels/generated/burn_000182.json",
+			"policy": "OPEN",
+			"seed": 1313,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1315",
+			"path": "res://resources/levels/generated/burn_000183.json",
+			"policy": "OPEN",
+			"seed": 1315,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 47,
+			"id": "burn_gen_chain_1316",
+			"path": "res://resources/levels/generated/burn_000184.json",
+			"policy": "OPEN",
+			"seed": 1316,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1317",
+			"path": "res://resources/levels/generated/burn_000185.json",
+			"policy": "OPEN",
+			"seed": 1317,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1320",
+			"path": "res://resources/levels/generated/burn_000186.json",
+			"policy": "OPEN",
+			"seed": 1320,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1321",
+			"path": "res://resources/levels/generated/burn_000187.json",
+			"policy": "OPEN",
+			"seed": 1321,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1325",
+			"path": "res://resources/levels/generated/burn_000188.json",
+			"policy": "OPEN",
+			"seed": 1325,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1326",
+			"path": "res://resources/levels/generated/burn_000189.json",
+			"policy": "OPEN",
+			"seed": 1326,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1327",
+			"path": "res://resources/levels/generated/burn_000190.json",
+			"policy": "OPEN",
+			"seed": 1327,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1330",
+			"path": "res://resources/levels/generated/burn_000191.json",
+			"policy": "OPEN",
+			"seed": 1330,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1331",
+			"path": "res://resources/levels/generated/burn_000192.json",
+			"policy": "OPEN",
+			"seed": 1331,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1332",
+			"path": "res://resources/levels/generated/burn_000193.json",
+			"policy": "OPEN",
+			"seed": 1332,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1335",
+			"path": "res://resources/levels/generated/burn_000194.json",
+			"policy": "OPEN",
+			"seed": 1335,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 37.3,
+			"id": "burn_gen_chain_1336",
+			"path": "res://resources/levels/generated/burn_000195.json",
+			"policy": "OPEN",
+			"seed": 1336,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 50.5,
+			"id": "burn_gen_climb_1340",
+			"path": "res://resources/levels/generated/burn_000196.json",
+			"policy": "OPEN",
+			"seed": 1340,
+			"solution_count": 18
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1341",
+			"path": "res://resources/levels/generated/burn_000197.json",
+			"policy": "OPEN",
+			"seed": 1341,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1342",
+			"path": "res://resources/levels/generated/burn_000198.json",
+			"policy": "OPEN",
+			"seed": 1342,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 47,
+			"id": "burn_gen_chain_1346",
+			"path": "res://resources/levels/generated/burn_000199.json",
+			"policy": "OPEN",
+			"seed": 1346,
+			"solution_count": 16
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1348",
+			"path": "res://resources/levels/generated/burn_000200.json",
+			"policy": "OPEN",
+			"seed": 1348,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1351",
+			"path": "res://resources/levels/generated/burn_000201.json",
+			"policy": "OPEN",
+			"seed": 1351,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1352",
+			"path": "res://resources/levels/generated/burn_000202.json",
+			"policy": "OPEN",
+			"seed": 1352,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1355",
+			"path": "res://resources/levels/generated/burn_000203.json",
+			"policy": "OPEN",
+			"seed": 1355,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1356",
+			"path": "res://resources/levels/generated/burn_000204.json",
+			"policy": "OPEN",
+			"seed": 1356,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1357",
+			"path": "res://resources/levels/generated/burn_000205.json",
+			"policy": "OPEN",
+			"seed": 1357,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1360",
+			"path": "res://resources/levels/generated/burn_000206.json",
+			"policy": "OPEN",
+			"seed": 1360,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1361",
+			"path": "res://resources/levels/generated/burn_000207.json",
+			"policy": "OPEN",
+			"seed": 1361,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1366",
+			"path": "res://resources/levels/generated/burn_000208.json",
+			"policy": "OPEN",
+			"seed": 1366,
+			"solution_count": 10
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1370",
+			"path": "res://resources/levels/generated/burn_000209.json",
+			"policy": "OPEN",
+			"seed": 1370,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1371",
+			"path": "res://resources/levels/generated/burn_000210.json",
+			"policy": "OPEN",
+			"seed": 1371,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1372",
+			"path": "res://resources/levels/generated/burn_000211.json",
+			"policy": "OPEN",
+			"seed": 1372,
+			"solution_count": 21
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1375",
+			"path": "res://resources/levels/generated/burn_000212.json",
+			"policy": "OPEN",
+			"seed": 1375,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1376",
+			"path": "res://resources/levels/generated/burn_000213.json",
+			"policy": "OPEN",
+			"seed": 1376,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1377",
+			"path": "res://resources/levels/generated/burn_000214.json",
+			"policy": "OPEN",
+			"seed": 1377,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1380",
+			"path": "res://resources/levels/generated/burn_000215.json",
+			"policy": "OPEN",
+			"seed": 1380,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1381",
+			"path": "res://resources/levels/generated/burn_000216.json",
+			"policy": "OPEN",
+			"seed": 1381,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.8,
+			"id": "burn_gen_chain_1386",
+			"path": "res://resources/levels/generated/burn_000217.json",
+			"policy": "OPEN",
+			"seed": 1386,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1387",
+			"path": "res://resources/levels/generated/burn_000218.json",
+			"policy": "OPEN",
+			"seed": 1387,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1390",
+			"path": "res://resources/levels/generated/burn_000219.json",
+			"policy": "OPEN",
+			"seed": 1390,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.7,
+			"id": "burn_gen_chain_1391",
+			"path": "res://resources/levels/generated/burn_000220.json",
+			"policy": "OPEN",
+			"seed": 1391,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1392",
+			"path": "res://resources/levels/generated/burn_000221.json",
+			"policy": "OPEN",
+			"seed": 1392,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1395",
+			"path": "res://resources/levels/generated/burn_000222.json",
+			"policy": "OPEN",
+			"seed": 1395,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1396",
+			"path": "res://resources/levels/generated/burn_000223.json",
+			"policy": "OPEN",
+			"seed": 1396,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1397",
+			"path": "res://resources/levels/generated/burn_000224.json",
+			"policy": "OPEN",
+			"seed": 1397,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 50.5,
+			"id": "burn_gen_climb_1400",
+			"path": "res://resources/levels/generated/burn_000225.json",
+			"policy": "OPEN",
+			"seed": 1400,
+			"solution_count": 18
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1401",
+			"path": "res://resources/levels/generated/burn_000226.json",
+			"policy": "OPEN",
+			"seed": 1401,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1405",
+			"path": "res://resources/levels/generated/burn_000227.json",
+			"policy": "OPEN",
+			"seed": 1405,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1406",
+			"path": "res://resources/levels/generated/burn_000228.json",
+			"policy": "OPEN",
+			"seed": 1406,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1407",
+			"path": "res://resources/levels/generated/burn_000229.json",
+			"policy": "OPEN",
+			"seed": 1407,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_chain_1411",
+			"path": "res://resources/levels/generated/burn_000230.json",
+			"policy": "OPEN",
+			"seed": 1411,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1412",
+			"path": "res://resources/levels/generated/burn_000231.json",
+			"policy": "OPEN",
+			"seed": 1412,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1416",
+			"path": "res://resources/levels/generated/burn_000232.json",
+			"policy": "OPEN",
+			"seed": 1416,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1420",
+			"path": "res://resources/levels/generated/burn_000233.json",
+			"policy": "OPEN",
+			"seed": 1420,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1421",
+			"path": "res://resources/levels/generated/burn_000234.json",
+			"policy": "OPEN",
+			"seed": 1421,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1422",
+			"path": "res://resources/levels/generated/burn_000235.json",
+			"policy": "OPEN",
+			"seed": 1422,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 50.5,
+			"id": "burn_gen_climb_1425",
+			"path": "res://resources/levels/generated/burn_000236.json",
+			"policy": "OPEN",
+			"seed": 1425,
+			"solution_count": 18
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1426",
+			"path": "res://resources/levels/generated/burn_000237.json",
+			"policy": "OPEN",
+			"seed": 1426,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 50.5,
+			"id": "burn_gen_climb_1430",
+			"path": "res://resources/levels/generated/burn_000238.json",
+			"policy": "OPEN",
+			"seed": 1430,
+			"solution_count": 18
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1431",
+			"path": "res://resources/levels/generated/burn_000239.json",
+			"policy": "OPEN",
+			"seed": 1431,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1432",
+			"path": "res://resources/levels/generated/burn_000240.json",
+			"policy": "OPEN",
+			"seed": 1432,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1435",
+			"path": "res://resources/levels/generated/burn_000241.json",
+			"policy": "OPEN",
+			"seed": 1435,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1436",
+			"path": "res://resources/levels/generated/burn_000242.json",
+			"policy": "OPEN",
+			"seed": 1436,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1437",
+			"path": "res://resources/levels/generated/burn_000243.json",
+			"policy": "OPEN",
+			"seed": 1437,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1441",
+			"path": "res://resources/levels/generated/burn_000244.json",
+			"policy": "OPEN",
+			"seed": 1441,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1442",
+			"path": "res://resources/levels/generated/burn_000245.json",
+			"policy": "OPEN",
+			"seed": 1442,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1445",
+			"path": "res://resources/levels/generated/burn_000246.json",
+			"policy": "OPEN",
+			"seed": 1445,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.8,
+			"id": "burn_gen_chain_1446",
+			"path": "res://resources/levels/generated/burn_000247.json",
+			"policy": "OPEN",
+			"seed": 1446,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1447",
+			"path": "res://resources/levels/generated/burn_000248.json",
+			"policy": "OPEN",
+			"seed": 1447,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1448",
+			"path": "res://resources/levels/generated/burn_000249.json",
+			"policy": "OPEN",
+			"seed": 1448,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1450",
+			"path": "res://resources/levels/generated/burn_000250.json",
+			"policy": "OPEN",
+			"seed": 1450,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1451",
+			"path": "res://resources/levels/generated/burn_000251.json",
+			"policy": "OPEN",
+			"seed": 1451,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1455",
+			"path": "res://resources/levels/generated/burn_000252.json",
+			"policy": "OPEN",
+			"seed": 1455,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.4,
+			"id": "burn_gen_chain_1456",
+			"path": "res://resources/levels/generated/burn_000253.json",
+			"policy": "OPEN",
+			"seed": 1456,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1457",
+			"path": "res://resources/levels/generated/burn_000254.json",
+			"policy": "OPEN",
+			"seed": 1457,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1461",
+			"path": "res://resources/levels/generated/burn_000255.json",
+			"policy": "OPEN",
+			"seed": 1461,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1462",
+			"path": "res://resources/levels/generated/burn_000256.json",
+			"policy": "OPEN",
+			"seed": 1462,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1465",
+			"path": "res://resources/levels/generated/burn_000257.json",
+			"policy": "OPEN",
+			"seed": 1465,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1466",
+			"path": "res://resources/levels/generated/burn_000258.json",
+			"policy": "OPEN",
+			"seed": 1466,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.9,
+			"id": "burn_gen_chain_1471",
+			"path": "res://resources/levels/generated/burn_000259.json",
+			"policy": "OPEN",
+			"seed": 1471,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1472",
+			"path": "res://resources/levels/generated/burn_000260.json",
+			"policy": "OPEN",
+			"seed": 1472,
+			"solution_count": 19
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_bridge_1473",
+			"path": "res://resources/levels/generated/burn_000261.json",
+			"policy": "OPEN",
+			"seed": 1473,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1475",
+			"path": "res://resources/levels/generated/burn_000262.json",
+			"policy": "OPEN",
+			"seed": 1475,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1476",
+			"path": "res://resources/levels/generated/burn_000263.json",
+			"policy": "OPEN",
+			"seed": 1476,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1481",
+			"path": "res://resources/levels/generated/burn_000264.json",
+			"policy": "OPEN",
+			"seed": 1481,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1482",
+			"path": "res://resources/levels/generated/burn_000265.json",
+			"policy": "OPEN",
+			"seed": 1482,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1485",
+			"path": "res://resources/levels/generated/burn_000266.json",
+			"policy": "OPEN",
+			"seed": 1485,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1486",
+			"path": "res://resources/levels/generated/burn_000267.json",
+			"policy": "OPEN",
+			"seed": 1486,
+			"solution_count": 10
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1490",
+			"path": "res://resources/levels/generated/burn_000268.json",
+			"policy": "OPEN",
+			"seed": 1490,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1491",
+			"path": "res://resources/levels/generated/burn_000269.json",
+			"policy": "OPEN",
+			"seed": 1491,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1496",
+			"path": "res://resources/levels/generated/burn_000270.json",
+			"policy": "OPEN",
+			"seed": 1496,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1500",
+			"path": "res://resources/levels/generated/burn_000271.json",
+			"policy": "OPEN",
+			"seed": 1500,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1501",
+			"path": "res://resources/levels/generated/burn_000272.json",
+			"policy": "OPEN",
+			"seed": 1501,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1506",
+			"path": "res://resources/levels/generated/burn_000273.json",
+			"policy": "OPEN",
+			"seed": 1506,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_bridge_1508",
+			"path": "res://resources/levels/generated/burn_000274.json",
+			"policy": "OPEN",
+			"seed": 1508,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1510",
+			"path": "res://resources/levels/generated/burn_000275.json",
+			"policy": "OPEN",
+			"seed": 1510,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1511",
+			"path": "res://resources/levels/generated/burn_000276.json",
+			"policy": "OPEN",
+			"seed": 1511,
+			"solution_count": 12
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1513",
+			"path": "res://resources/levels/generated/burn_000277.json",
+			"policy": "OPEN",
+			"seed": 1513,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.2,
+			"id": "burn_gen_chain_1516",
+			"path": "res://resources/levels/generated/burn_000278.json",
+			"policy": "OPEN",
+			"seed": 1516,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1517",
+			"path": "res://resources/levels/generated/burn_000279.json",
+			"policy": "OPEN",
+			"seed": 1517,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1520",
+			"path": "res://resources/levels/generated/burn_000280.json",
+			"policy": "OPEN",
+			"seed": 1520,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1521",
+			"path": "res://resources/levels/generated/burn_000281.json",
+			"policy": "OPEN",
+			"seed": 1521,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1525",
+			"path": "res://resources/levels/generated/burn_000282.json",
+			"policy": "OPEN",
+			"seed": 1525,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1526",
+			"path": "res://resources/levels/generated/burn_000283.json",
+			"policy": "OPEN",
+			"seed": 1526,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1527",
+			"path": "res://resources/levels/generated/burn_000284.json",
+			"policy": "OPEN",
+			"seed": 1527,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1528",
+			"path": "res://resources/levels/generated/burn_000285.json",
+			"policy": "OPEN",
+			"seed": 1528,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1530",
+			"path": "res://resources/levels/generated/burn_000286.json",
+			"policy": "OPEN",
+			"seed": 1530,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.4,
+			"id": "burn_gen_chain_1531",
+			"path": "res://resources/levels/generated/burn_000287.json",
+			"policy": "OPEN",
+			"seed": 1531,
+			"solution_count": 13
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1533",
+			"path": "res://resources/levels/generated/burn_000288.json",
+			"policy": "OPEN",
+			"seed": 1533,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1535",
+			"path": "res://resources/levels/generated/burn_000289.json",
+			"policy": "OPEN",
+			"seed": 1535,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1536",
+			"path": "res://resources/levels/generated/burn_000290.json",
+			"policy": "OPEN",
+			"seed": 1536,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1537",
+			"path": "res://resources/levels/generated/burn_000291.json",
+			"policy": "OPEN",
+			"seed": 1537,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1540",
+			"path": "res://resources/levels/generated/burn_000292.json",
+			"policy": "OPEN",
+			"seed": 1540,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1541",
+			"path": "res://resources/levels/generated/burn_000293.json",
+			"policy": "OPEN",
+			"seed": 1541,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 37.2,
+			"id": "burn_gen_chain_1546",
+			"path": "res://resources/levels/generated/burn_000294.json",
+			"policy": "OPEN",
+			"seed": 1546,
+			"solution_count": 10
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1547",
+			"path": "res://resources/levels/generated/burn_000295.json",
+			"policy": "OPEN",
+			"seed": 1547,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1550",
+			"path": "res://resources/levels/generated/burn_000296.json",
+			"policy": "OPEN",
+			"seed": 1550,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1551",
+			"path": "res://resources/levels/generated/burn_000297.json",
+			"policy": "OPEN",
+			"seed": 1551,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1555",
+			"path": "res://resources/levels/generated/burn_000298.json",
+			"policy": "OPEN",
+			"seed": 1555,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1556",
+			"path": "res://resources/levels/generated/burn_000299.json",
+			"policy": "OPEN",
+			"seed": 1556,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1557",
+			"path": "res://resources/levels/generated/burn_000300.json",
+			"policy": "OPEN",
+			"seed": 1557,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1560",
+			"path": "res://resources/levels/generated/burn_000301.json",
+			"policy": "OPEN",
+			"seed": 1560,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1561",
+			"path": "res://resources/levels/generated/burn_000302.json",
+			"policy": "OPEN",
+			"seed": 1561,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1565",
+			"path": "res://resources/levels/generated/burn_000303.json",
+			"policy": "OPEN",
+			"seed": 1565,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1566",
+			"path": "res://resources/levels/generated/burn_000304.json",
+			"policy": "OPEN",
+			"seed": 1566,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1567",
+			"path": "res://resources/levels/generated/burn_000305.json",
+			"policy": "OPEN",
+			"seed": 1567,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1571",
+			"path": "res://resources/levels/generated/burn_000306.json",
+			"policy": "OPEN",
+			"seed": 1571,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1572",
+			"path": "res://resources/levels/generated/burn_000307.json",
+			"policy": "OPEN",
+			"seed": 1572,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1575",
+			"path": "res://resources/levels/generated/burn_000308.json",
+			"policy": "OPEN",
+			"seed": 1575,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.7,
+			"id": "burn_gen_chain_1576",
+			"path": "res://resources/levels/generated/burn_000309.json",
+			"policy": "OPEN",
+			"seed": 1576,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1580",
+			"path": "res://resources/levels/generated/burn_000310.json",
+			"policy": "OPEN",
+			"seed": 1580,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1581",
+			"path": "res://resources/levels/generated/burn_000311.json",
+			"policy": "OPEN",
+			"seed": 1581,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1582",
+			"path": "res://resources/levels/generated/burn_000312.json",
+			"policy": "OPEN",
+			"seed": 1582,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1585",
+			"path": "res://resources/levels/generated/burn_000313.json",
+			"policy": "OPEN",
+			"seed": 1585,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1586",
+			"path": "res://resources/levels/generated/burn_000314.json",
+			"policy": "OPEN",
+			"seed": 1586,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1587",
+			"path": "res://resources/levels/generated/burn_000315.json",
+			"policy": "OPEN",
+			"seed": 1587,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1590",
+			"path": "res://resources/levels/generated/burn_000316.json",
+			"policy": "OPEN",
+			"seed": 1590,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_chain_1591",
+			"path": "res://resources/levels/generated/burn_000317.json",
+			"policy": "OPEN",
+			"seed": 1591,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1596",
+			"path": "res://resources/levels/generated/burn_000318.json",
+			"policy": "OPEN",
+			"seed": 1596,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1597",
+			"path": "res://resources/levels/generated/burn_000319.json",
+			"policy": "OPEN",
+			"seed": 1597,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1601",
+			"path": "res://resources/levels/generated/burn_000320.json",
+			"policy": "OPEN",
+			"seed": 1601,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1602",
+			"path": "res://resources/levels/generated/burn_000321.json",
+			"policy": "OPEN",
+			"seed": 1602,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1605",
+			"path": "res://resources/levels/generated/burn_000322.json",
+			"policy": "OPEN",
+			"seed": 1605,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1606",
+			"path": "res://resources/levels/generated/burn_000323.json",
+			"policy": "OPEN",
+			"seed": 1606,
+			"solution_count": 11
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1608",
+			"path": "res://resources/levels/generated/burn_000324.json",
+			"policy": "OPEN",
+			"seed": 1608,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1610",
+			"path": "res://resources/levels/generated/burn_000325.json",
+			"policy": "OPEN",
+			"seed": 1610,
+			"solution_count": 8
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.7,
+			"id": "burn_gen_chain_1611",
+			"path": "res://resources/levels/generated/burn_000326.json",
+			"policy": "OPEN",
+			"seed": 1611,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1616",
+			"path": "res://resources/levels/generated/burn_000327.json",
+			"policy": "OPEN",
+			"seed": 1616,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1621",
+			"path": "res://resources/levels/generated/burn_000328.json",
+			"policy": "OPEN",
+			"seed": 1621,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1625",
+			"path": "res://resources/levels/generated/burn_000329.json",
+			"policy": "OPEN",
+			"seed": 1625,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1626",
+			"path": "res://resources/levels/generated/burn_000330.json",
+			"policy": "OPEN",
+			"seed": 1626,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1627",
+			"path": "res://resources/levels/generated/burn_000331.json",
+			"policy": "OPEN",
+			"seed": 1627,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_bridge_1628",
+			"path": "res://resources/levels/generated/burn_000332.json",
+			"policy": "OPEN",
+			"seed": 1628,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1631",
+			"path": "res://resources/levels/generated/burn_000333.json",
+			"policy": "OPEN",
+			"seed": 1631,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1632",
+			"path": "res://resources/levels/generated/burn_000334.json",
+			"policy": "OPEN",
+			"seed": 1632,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1635",
+			"path": "res://resources/levels/generated/burn_000335.json",
+			"policy": "OPEN",
+			"seed": 1635,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1636",
+			"path": "res://resources/levels/generated/burn_000336.json",
+			"policy": "OPEN",
+			"seed": 1636,
+			"solution_count": 10
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1637",
+			"path": "res://resources/levels/generated/burn_000337.json",
+			"policy": "OPEN",
+			"seed": 1637,
+			"solution_count": 19
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1640",
+			"path": "res://resources/levels/generated/burn_000338.json",
+			"policy": "OPEN",
+			"seed": 1640,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1641",
+			"path": "res://resources/levels/generated/burn_000339.json",
+			"policy": "OPEN",
+			"seed": 1641,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1642",
+			"path": "res://resources/levels/generated/burn_000340.json",
+			"policy": "OPEN",
+			"seed": 1642,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1645",
+			"path": "res://resources/levels/generated/burn_000341.json",
+			"policy": "OPEN",
+			"seed": 1645,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.5,
+			"id": "burn_gen_chain_1646",
+			"path": "res://resources/levels/generated/burn_000342.json",
+			"policy": "OPEN",
+			"seed": 1646,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1650",
+			"path": "res://resources/levels/generated/burn_000343.json",
+			"policy": "OPEN",
+			"seed": 1650,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1651",
+			"path": "res://resources/levels/generated/burn_000344.json",
+			"policy": "OPEN",
+			"seed": 1651,
+			"solution_count": 14
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1652",
+			"path": "res://resources/levels/generated/burn_000345.json",
+			"policy": "OPEN",
+			"seed": 1652,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1656",
+			"path": "res://resources/levels/generated/burn_000346.json",
+			"policy": "OPEN",
+			"seed": 1656,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1660",
+			"path": "res://resources/levels/generated/burn_000347.json",
+			"policy": "OPEN",
+			"seed": 1660,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.7,
+			"id": "burn_gen_chain_1661",
+			"path": "res://resources/levels/generated/burn_000348.json",
+			"policy": "OPEN",
+			"seed": 1661,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1665",
+			"path": "res://resources/levels/generated/burn_000349.json",
+			"policy": "OPEN",
+			"seed": 1665,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1666",
+			"path": "res://resources/levels/generated/burn_000350.json",
+			"policy": "OPEN",
+			"seed": 1666,
+			"solution_count": 10
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1667",
+			"path": "res://resources/levels/generated/burn_000351.json",
+			"policy": "OPEN",
+			"seed": 1667,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1670",
+			"path": "res://resources/levels/generated/burn_000352.json",
+			"policy": "OPEN",
+			"seed": 1670,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1671",
+			"path": "res://resources/levels/generated/burn_000353.json",
+			"policy": "OPEN",
+			"seed": 1671,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1675",
+			"path": "res://resources/levels/generated/burn_000354.json",
+			"policy": "OPEN",
+			"seed": 1675,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1676",
+			"path": "res://resources/levels/generated/burn_000355.json",
+			"policy": "OPEN",
+			"seed": 1676,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1681",
+			"path": "res://resources/levels/generated/burn_000356.json",
+			"policy": "OPEN",
+			"seed": 1681,
+			"solution_count": 14
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1685",
+			"path": "res://resources/levels/generated/burn_000357.json",
+			"policy": "OPEN",
+			"seed": 1685,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1686",
+			"path": "res://resources/levels/generated/burn_000358.json",
+			"policy": "OPEN",
+			"seed": 1686,
+			"solution_count": 12
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1690",
+			"path": "res://resources/levels/generated/burn_000359.json",
+			"policy": "OPEN",
+			"seed": 1690,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1691",
+			"path": "res://resources/levels/generated/burn_000360.json",
+			"policy": "OPEN",
+			"seed": 1691,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1692",
+			"path": "res://resources/levels/generated/burn_000361.json",
+			"policy": "OPEN",
+			"seed": 1692,
+			"solution_count": 20
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1693",
+			"path": "res://resources/levels/generated/burn_000362.json",
+			"policy": "OPEN",
+			"seed": 1693,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1695",
+			"path": "res://resources/levels/generated/burn_000363.json",
+			"policy": "OPEN",
+			"seed": 1695,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_chain_1696",
+			"path": "res://resources/levels/generated/burn_000364.json",
+			"policy": "OPEN",
+			"seed": 1696,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1700",
+			"path": "res://resources/levels/generated/burn_000365.json",
+			"policy": "OPEN",
+			"seed": 1700,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1701",
+			"path": "res://resources/levels/generated/burn_000366.json",
+			"policy": "OPEN",
+			"seed": 1701,
+			"solution_count": 16
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1702",
+			"path": "res://resources/levels/generated/burn_000367.json",
+			"policy": "OPEN",
+			"seed": 1702,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1705",
+			"path": "res://resources/levels/generated/burn_000368.json",
+			"policy": "OPEN",
+			"seed": 1705,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1706",
+			"path": "res://resources/levels/generated/burn_000369.json",
+			"policy": "OPEN",
+			"seed": 1706,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_climb_1710",
+			"path": "res://resources/levels/generated/burn_000370.json",
+			"policy": "OPEN",
+			"seed": 1710,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 44.6,
+			"id": "burn_gen_chain_1711",
+			"path": "res://resources/levels/generated/burn_000371.json",
+			"policy": "OPEN",
+			"seed": 1711,
+			"solution_count": 14
+		},
+		{
+			"archetype": "BRIDGE",
+			"band": "medium",
+			"difficulty": 42.2,
+			"id": "burn_gen_bridge_1713",
+			"path": "res://resources/levels/generated/burn_000372.json",
+			"policy": "OPEN",
+			"seed": 1713,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1715",
+			"path": "res://resources/levels/generated/burn_000373.json",
+			"policy": "OPEN",
+			"seed": 1715,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1716",
+			"path": "res://resources/levels/generated/burn_000374.json",
+			"policy": "OPEN",
+			"seed": 1716,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1720",
+			"path": "res://resources/levels/generated/burn_000375.json",
+			"policy": "OPEN",
+			"seed": 1720,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.5,
+			"id": "burn_gen_chain_1721",
+			"path": "res://resources/levels/generated/burn_000376.json",
+			"policy": "OPEN",
+			"seed": 1721,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1722",
+			"path": "res://resources/levels/generated/burn_000377.json",
+			"policy": "OPEN",
+			"seed": 1722,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.4,
+			"id": "burn_gen_chain_1726",
+			"path": "res://resources/levels/generated/burn_000378.json",
+			"policy": "OPEN",
+			"seed": 1726,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 48.1,
+			"id": "burn_gen_chain_1731",
+			"path": "res://resources/levels/generated/burn_000379.json",
+			"policy": "OPEN",
+			"seed": 1731,
+			"solution_count": 17
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1732",
+			"path": "res://resources/levels/generated/burn_000380.json",
+			"policy": "OPEN",
+			"seed": 1732,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 45.8,
+			"id": "burn_gen_chain_1736",
+			"path": "res://resources/levels/generated/burn_000381.json",
+			"policy": "OPEN",
+			"seed": 1736,
+			"solution_count": 15
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1737",
+			"path": "res://resources/levels/generated/burn_000382.json",
+			"policy": "OPEN",
+			"seed": 1737,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.4,
+			"id": "burn_gen_chain_1741",
+			"path": "res://resources/levels/generated/burn_000383.json",
+			"policy": "OPEN",
+			"seed": 1741,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.3,
+			"id": "burn_gen_chain_1746",
+			"path": "res://resources/levels/generated/burn_000384.json",
+			"policy": "OPEN",
+			"seed": 1746,
+			"solution_count": 12
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1747",
+			"path": "res://resources/levels/generated/burn_000385.json",
+			"policy": "OPEN",
+			"seed": 1747,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1750",
+			"path": "res://resources/levels/generated/burn_000386.json",
+			"policy": "OPEN",
+			"seed": 1750,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1751",
+			"path": "res://resources/levels/generated/burn_000387.json",
+			"policy": "OPEN",
+			"seed": 1751,
+			"solution_count": 11
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 40.2,
+			"id": "burn_gen_chain_1756",
+			"path": "res://resources/levels/generated/burn_000388.json",
+			"policy": "OPEN",
+			"seed": 1756,
+			"solution_count": 10
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1760",
+			"path": "res://resources/levels/generated/burn_000389.json",
+			"policy": "OPEN",
+			"seed": 1760,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 46.9,
+			"id": "burn_gen_chain_1761",
+			"path": "res://resources/levels/generated/burn_000390.json",
+			"policy": "OPEN",
+			"seed": 1761,
+			"solution_count": 16
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 42.8,
+			"id": "burn_gen_chain_1766",
+			"path": "res://resources/levels/generated/burn_000391.json",
+			"policy": "OPEN",
+			"seed": 1766,
+			"solution_count": 15
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1770",
+			"path": "res://resources/levels/generated/burn_000392.json",
+			"policy": "OPEN",
+			"seed": 1770,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.4,
+			"id": "burn_gen_chain_1771",
+			"path": "res://resources/levels/generated/burn_000393.json",
+			"policy": "OPEN",
+			"seed": 1771,
+			"solution_count": 13
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1772",
+			"path": "res://resources/levels/generated/burn_000394.json",
+			"policy": "OPEN",
+			"seed": 1772,
+			"solution_count": 19
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1775",
+			"path": "res://resources/levels/generated/burn_000395.json",
+			"policy": "OPEN",
+			"seed": 1775,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 43.6,
+			"id": "burn_gen_chain_1776",
+			"path": "res://resources/levels/generated/burn_000396.json",
+			"policy": "OPEN",
+			"seed": 1776,
+			"solution_count": 13
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 37.4,
+			"id": "burn_gen_chain_1781",
+			"path": "res://resources/levels/generated/burn_000397.json",
+			"policy": "OPEN",
+			"seed": 1781,
+			"solution_count": 11
+		},
+		{
+			"archetype": "TRAP",
+			"band": "medium",
+			"difficulty": 50.6,
+			"id": "burn_gen_trap_1782",
+			"path": "res://resources/levels/generated/burn_000398.json",
+			"policy": "OPEN",
+			"seed": 1782,
+			"solution_count": 20
+		},
+		{
+			"archetype": "CLIMB",
+			"band": "medium",
+			"difficulty": 49.3,
+			"id": "burn_gen_climb_1785",
+			"path": "res://resources/levels/generated/burn_000399.json",
+			"policy": "OPEN",
+			"seed": 1785,
+			"solution_count": 17
+		},
+		{
+			"archetype": "CHAIN",
+			"band": "medium",
+			"difficulty": 41.3,
+			"id": "burn_gen_chain_1786",
+			"path": "res://resources/levels/generated/burn_000400.json",
+			"policy": "OPEN",
+			"seed": 1786,
+			"solution_count": 11
+		}
+	]
+}

@@ -19,6 +19,25 @@ Hyper-casual fire puzzle. Tap once. Watch it burn.
 
 Viewport is **720×1280** portrait with canvas stretch.
 
+## Procedural level generation
+
+Factory pipeline (real `FireManager` solvability — never a fake second physics):
+
+`LevelGenerator → LevelSolver → LevelValidator → DifficultyAnalyzer → DuplicateCheck → JSON`
+
+```bash
+# Automated tests
+godot --headless --path . -s res://tools/test_level_gen.gd
+
+# Prove solver on handcrafted SPARK
+godot --headless --path . -s res://tools/prove_solver_spark.gd
+
+# Batch generate into resources/levels/generated/
+godot --headless --path . -s res://tools/generate_levels.gd
+```
+
+In-game (debug, not normal UI): **F1** toggle per-start solver dump, **N** next generated level, **B** back to SPARK.
+
 ### Headless / Linux VM tip
 
 If the windowed editor fails to start Vulkan on a headless/VM display:
@@ -27,18 +46,17 @@ If the windowed editor fails to start Vulkan on a headless/VM display:
 godot --path . --rendering-method gl_compatibility --rendering-driver opengl3
 ```
 
-Validate Level 1 ignition chain without a GUI:
-
-```bash
-godot --headless --path . -s res://tools/sim_validate.gd
-```
+Legacy SPARK-only check: `godot --headless --path . -s res://tools/sim_validate.gd`
 
 ## Phase 1 controls
 
 | Input | Action |
 | --- | --- |
 | Tap / LMB | Ignite the tapped object (once per run) |
-| R / Retry button | Reload Level 1 |
+| R / Retry button | Reload current level |
+| F1 | Toggle generation debug (solver dump) |
+| N | Load next generated level |
+| B | Load handcrafted SPARK |
 
 Goal: **BURN 100%**. Wrong starts can stall — retry and pick another spark.
 
@@ -51,11 +69,13 @@ scripts/
   fire/           FireManager (sim), MaterialDefinition
   objects/        BurnableObject states
   level/          LevelLoader (JSON → nodes)
+  level_gen/      Generator, Solver, Validator, Difficulty, Dupes
   ui/             UIManager, ScoreManager
   visual/         ParticleManager (visual only)
 resources/
   materials/      paper.tres, wood.tres
-  levels/         level_01.json
+  levels/         level_01.json + generated/
+tools/            sim_validate, prove_solver, generate_levels, tests
 shaders/          procedural background
 ```
 

@@ -1,0 +1,282 @@
+{
+	"display_name": "CLIMB-1610",
+	"generator": {
+		"archetype": "CLIMB",
+		"difficulty": 49.3,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1610,
+		"signature": "3534968019",
+		"solution_count": 8,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"decoy_0"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "Start low. Climb the fuse.",
+	"id": "burn_gen_climb_1610",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				343.3,
+				1057.3
+			],
+			"rotation_deg": -2.6,
+			"scoring": true,
+			"size": [
+				55.8,
+				57.7
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				242.9,
+				954.4
+			],
+			"rotation_deg": 0.6,
+			"scoring": true,
+			"size": [
+				53.2,
+				50.7
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				435.8,
+				945.9
+			],
+			"rotation_deg": 0.7,
+			"scoring": true,
+			"size": [
+				53.8,
+				50
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				226.9,
+				839.8
+			],
+			"rotation_deg": 0.8,
+			"scoring": true,
+			"size": [
+				52.7,
+				51.7
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				336,
+				837.2
+			],
+			"rotation_deg": -0.8,
+			"scoring": true,
+			"size": [
+				48.2,
+				42.2
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				458.5,
+				844.9
+			],
+			"rotation_deg": 0.9,
+			"scoring": true,
+			"size": [
+				47.5,
+				47.2
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				349.2,
+				731.1
+			],
+			"rotation_deg": 0.1,
+			"scoring": true,
+			"size": [
+				202.8,
+				35.6
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				254.1,
+				606.3
+			],
+			"rotation_deg": -4.5,
+			"scoring": true,
+			"size": [
+				45.4,
+				46.7
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				432.3,
+				601.7
+			],
+			"rotation_deg": -9.4,
+			"scoring": true,
+			"size": [
+				46.8,
+				49.4
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				344.8,
+				499.4
+			],
+			"rotation_deg": 1.3,
+			"scoring": true,
+			"size": [
+				47.6,
+				46
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "wood",
+			"position": [
+				338.8,
+				379.7
+			],
+			"rotation_deg": -0.8,
+			"scoring": true,
+			"size": [
+				45,
+				136.2
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				267,
+				258.2
+			],
+			"rotation_deg": 5.1,
+			"scoring": true,
+			"size": [
+				45.1,
+				48.8
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				416.1,
+				252.1
+			],
+			"rotation_deg": 1.4,
+			"scoring": true,
+			"size": [
+				52.4,
+				47.7
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "wood",
+			"position": [
+				349,
+				156.8
+			],
+			"rotation_deg": 0.9,
+			"scoring": true,
+			"size": [
+				237.9,
+				32
+			]
+		},
+		{
+			"id": "sol_14",
+			"material": "paper",
+			"position": [
+				254,
+				111.5
+			],
+			"rotation_deg": 3.1,
+			"scoring": true,
+			"size": [
+				45.7,
+				43.1
+			]
+		},
+		{
+			"id": "sol_15",
+			"material": "paper",
+			"position": [
+				432.1,
+				115.6
+			],
+			"rotation_deg": -2.6,
+			"scoring": true,
+			"size": [
+				50.3,
+				51.3
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				126,
+				1064.3
+			],
+			"rotation_deg": -9.3,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				593.9,
+				1072.5
+			],
+			"rotation_deg": 1.3,
+			"scoring": false,
+			"size": [
+				52.3,
+				54.9
+			]
+		}
+	]
+}

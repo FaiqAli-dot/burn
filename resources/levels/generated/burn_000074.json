@@ -1,0 +1,260 @@
+{
+	"display_name": "CHAIN-1106",
+	"generator": {
+		"archetype": "CHAIN",
+		"difficulty": 44.5,
+		"difficulty_band": "medium",
+		"difficulty_target": 40,
+		"intended_solution": "sol_0",
+		"seed": 1106,
+		"signature": "2442718137",
+		"solution_count": 14,
+		"solution_policy": "OPEN",
+		"solutions": [
+			"sol_0",
+			"sol_1",
+			"sol_2",
+			"sol_3",
+			"sol_4",
+			"sol_5",
+			"sol_6",
+			"sol_7",
+			"sol_8",
+			"sol_9",
+			"sol_10",
+			"sol_11",
+			"sol_12",
+			"sol_13"
+		],
+		"trap_strength": "medium",
+		"version": "1.0.0"
+	},
+	"hint": "One path. Keep it fed.",
+	"id": "burn_gen_chain_1106",
+	"objects": [
+		{
+			"id": "sol_0",
+			"material": "paper",
+			"position": [
+				160,
+				1060
+			],
+			"rotation_deg": -4.2,
+			"scoring": true,
+			"size": [
+				44.9,
+				44.6
+			]
+		},
+		{
+			"id": "sol_1",
+			"material": "paper",
+			"position": [
+				209.3,
+				1004.3
+			],
+			"rotation_deg": 2,
+			"scoring": true,
+			"size": [
+				44.7,
+				42.7
+			]
+		},
+		{
+			"id": "sol_2",
+			"material": "paper",
+			"position": [
+				252,
+				942.9
+			],
+			"rotation_deg": 10.6,
+			"scoring": true,
+			"size": [
+				47.9,
+				43.4
+			]
+		},
+		{
+			"id": "sol_3",
+			"material": "paper",
+			"position": [
+				290.6,
+				881.9
+			],
+			"rotation_deg": 2.6,
+			"scoring": true,
+			"size": [
+				53.5,
+				56.2
+			]
+		},
+		{
+			"id": "sol_4",
+			"material": "paper",
+			"position": [
+				331,
+				826.9
+			],
+			"rotation_deg": 9,
+			"scoring": true,
+			"size": [
+				49.3,
+				47.7
+			]
+		},
+		{
+			"id": "sol_5",
+			"material": "paper",
+			"position": [
+				369.7,
+				774.1
+			],
+			"rotation_deg": 7.8,
+			"scoring": true,
+			"size": [
+				53.4,
+				56.3
+			]
+		},
+		{
+			"id": "sol_6",
+			"material": "wood",
+			"position": [
+				408.6,
+				721.1
+			],
+			"rotation_deg": 8.9,
+			"scoring": true,
+			"size": [
+				89.2,
+				40.8
+			]
+		},
+		{
+			"id": "sol_7",
+			"material": "paper",
+			"position": [
+				456.7,
+				661.2
+			],
+			"rotation_deg": -7.1,
+			"scoring": true,
+			"size": [
+				49.2,
+				46.3
+			]
+		},
+		{
+			"id": "sol_8",
+			"material": "paper",
+			"position": [
+				493.9,
+				603
+			],
+			"rotation_deg": -3.4,
+			"scoring": true,
+			"size": [
+				53.8,
+				52.6
+			]
+		},
+		{
+			"id": "sol_9",
+			"material": "paper",
+			"position": [
+				544.9,
+				546.9
+			],
+			"rotation_deg": -7.5,
+			"scoring": true,
+			"size": [
+				48.7,
+				43.3
+			]
+		},
+		{
+			"id": "sol_10",
+			"material": "paper",
+			"position": [
+				575.2,
+				493
+			],
+			"rotation_deg": -3.4,
+			"scoring": true,
+			"size": [
+				48,
+				41.1
+			]
+		},
+		{
+			"id": "sol_11",
+			"material": "paper",
+			"position": [
+				594.3,
+				428.5
+			],
+			"rotation_deg": 10.6,
+			"scoring": true,
+			"size": [
+				51.5,
+				46.8
+			]
+		},
+		{
+			"id": "sol_12",
+			"material": "paper",
+			"position": [
+				594.7,
+				370.8
+			],
+			"rotation_deg": 8.3,
+			"scoring": true,
+			"size": [
+				50.6,
+				50.4
+			]
+		},
+		{
+			"id": "sol_13",
+			"material": "paper",
+			"position": [
+				593.4,
+				298.6
+			],
+			"rotation_deg": -2.9,
+			"scoring": true,
+			"size": [
+				53.3,
+				54.2
+			]
+		},
+		{
+			"id": "decoy_0",
+			"material": "wood",
+			"position": [
+				445,
+				972.3
+			],
+			"rotation_deg": 6.9,
+			"scoring": false,
+			"size": [
+				52,
+				52
+			]
+		},
+		{
+			"id": "decoy_1",
+			"material": "paper",
+			"position": [
+				416.5,
+				1059.5
+			],
+			"rotation_deg": -17,
+			"scoring": false,
+			"size": [
+				44.3,
+				45.4
+			]
+		}
+	]
+}

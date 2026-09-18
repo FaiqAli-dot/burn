@@ -139,68 +139,63 @@ func _snap(v: float) -> float:
 
 func _gen_climb(rng: RandomNumberGenerator, params: GenParams) -> Array:
 	## Vertical fuse: bottom paper start → paper cluster → wood gate → climb.
-	## Wood gates spaced so ≥2 papers below are required (UNIQUE-leaning).
 	var objects: Array = []
-	var cx := 360.0
-	var y := PLAY_BOTTOM - 20.0
+	var cx := 320.0 + rng.randf() * 80.0
+	var y := PLAY_BOTTOM - 10.0 - rng.randf() * 40.0
 	var idx := 0
+	var spread := 70.0 + rng.randf() * 30.0
+	var rise := 85.0 + rng.randf() * 25.0
 
-	## Solution start
 	objects.append(_obj("sol_0", "paper", Vector2(cx, y), _paper_size(rng), rng.randf_range(-8, 8)))
 	idx += 1
-	y -= 90.0
+	y -= rise
 
-	## Twin papers
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - 80, y), _paper_size(rng), rng.randf_range(-10, 10)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - spread, y), _paper_size(rng), rng.randf_range(-10, 10)))
 	idx += 1
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + 80, y), _paper_size(rng), rng.randf_range(-10, 10)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + spread, y), _paper_size(rng), rng.randf_range(-10, 10)))
 	idx += 1
-	y -= 95.0
+	y -= rise
 
-	## Triple under beam (co-heat wood)
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - 110, y), _paper_size(rng), rng.randf_range(-6, 6)))
+	var under := 95.0 + rng.randf() * 30.0
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - under, y), _paper_size(rng), rng.randf_range(-6, 6)))
 	idx += 1
 	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx, y - 10), _paper_size(rng), 0.0))
 	idx += 1
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + 110, y), _paper_size(rng), rng.randf_range(-6, 6)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + under, y), _paper_size(rng), rng.randf_range(-6, 6)))
 	idx += 1
-	y -= 100.0
+	y -= rise + 10.0
 
-	## Wood beam gate
 	objects.append(_obj("sol_%d" % idx, "wood", Vector2(cx, y), _wood_beam_size(rng, true), 0.0))
 	idx += 1
-	y -= 110.0
+	y -= rise + 15.0
 
-	## Papers above beam
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - 90, y), _paper_size(rng), rng.randf_range(-12, 12)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - spread * 0.9, y), _paper_size(rng), rng.randf_range(-12, 12)))
 	idx += 1
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + 90, y), _paper_size(rng), rng.randf_range(-12, 12)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + spread * 0.9, y), _paper_size(rng), rng.randf_range(-12, 12)))
 	idx += 1
-	y -= 90.0
+	y -= rise
 
 	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx, y), _paper_size(rng), rng.randf_range(-5, 5)))
 	idx += 1
-	y -= 100.0
+	y -= rise + 10.0
 
-	## Wood post
 	objects.append(_obj("sol_%d" % idx, "wood", Vector2(cx, y), _wood_beam_size(rng, false), 0.0))
 	idx += 1
-	y -= 120.0
+	y -= rise + 20.0
 
-	## Top cluster
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - 80, y), _paper_size(rng), rng.randf_range(-8, 8)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - spread * 0.85, y), _paper_size(rng), rng.randf_range(-8, 8)))
 	idx += 1
-	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + 80, y), _paper_size(rng), rng.randf_range(-8, 8)))
+	objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + spread * 0.85, y), _paper_size(rng), rng.randf_range(-8, 8)))
 	idx += 1
-	y -= 85.0
+	y -= rise * 0.9
 
 	if params.material_complexity > 0.35:
-		objects.append(_obj("sol_%d" % idx, "wood", Vector2(cx, y), Vector2(240 + rng.randf() * 60, 32), 0.0))
+		objects.append(_obj("sol_%d" % idx, "wood", Vector2(cx, y), Vector2(220 + rng.randf() * 80, 32), 0.0))
 		idx += 1
-		y -= 70.0
-		objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - 100, y), _paper_size(rng), 2.0))
+		y -= 65.0 + rng.randf() * 20.0
+		objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx - spread, y), _paper_size(rng), 2.0))
 		idx += 1
-		objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + 100, y), _paper_size(rng), -2.0))
+		objects.append(_obj("sol_%d" % idx, "paper", Vector2(cx + spread, y), _paper_size(rng), -2.0))
 		idx += 1
 
 	_add_decoys(objects, rng, params.decoy_count, true)
