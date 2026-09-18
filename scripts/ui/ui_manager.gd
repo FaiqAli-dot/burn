@@ -1,16 +1,19 @@
 class_name UIManager
 extends CanvasLayer
-## Minimal HUD: level label, burn %, retry, continue, win/fail banners.
+## Premium minimal HUD: level, %, retry, continue, home, win/fail.
 
 signal retry_pressed
 signal continue_pressed
+signal home_pressed
 
 @onready var level_label: Label = $Root/TopBar/LevelLabel
 @onready var percent_label: Label = $Root/TopBar/PercentLabel
+@onready var home_button: Button = $Root/TopBar/HomeButton
 @onready var retry_button: Button = $Root/RetryButton
 @onready var continue_button: Button = $Root/ContinueButton
 @onready var banner: Label = $Root/Banner
 @onready var subtitle: Label = $Root/Subtitle
+@onready var veil: ColorRect = $Root/Veil
 
 
 func _ready() -> void:
@@ -18,8 +21,15 @@ func _ready() -> void:
 	if continue_button:
 		continue_button.pressed.connect(func() -> void: continue_pressed.emit())
 		continue_button.visible = false
+	if home_button:
+		home_button.pressed.connect(func() -> void: home_pressed.emit())
+		home_button.focus_mode = Control.FOCUS_NONE
+		home_button.flat = true
 	banner.visible = false
 	subtitle.visible = false
+	if veil:
+		veil.visible = false
+		veil.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_style_retry()
 
 
@@ -34,8 +44,10 @@ func set_percent(percent: float) -> void:
 func show_playing() -> void:
 	banner.visible = false
 	subtitle.visible = false
+	if veil:
+		veil.visible = false
 	retry_button.text = "RETRY"
-	retry_button.modulate.a = 0.55
+	retry_button.modulate.a = 0.45
 	if continue_button:
 		continue_button.visible = false
 
@@ -49,6 +61,7 @@ func show_won() -> void:
 	if continue_button:
 		continue_button.visible = true
 		continue_button.text = "CONTINUE"
+	_show_veil(0.22)
 	_pulse_banner()
 
 
@@ -60,18 +73,31 @@ func show_failed(percent: float) -> void:
 	retry_button.modulate.a = 1.0
 	if continue_button:
 		continue_button.visible = false
+	_show_veil(0.28)
 	_pulse_banner()
+
+
+func _show_veil(alpha: float) -> void:
+	if veil == null:
+		return
+	veil.visible = true
+	veil.color = Color(0.04, 0.03, 0.025, 0.0)
+	var tw := create_tween()
+	tw.tween_property(veil, "color:a", alpha, 0.3)
 
 
 func _pulse_banner() -> void:
 	banner.modulate.a = 0.0
+	banner.scale = Vector2(0.96, 0.96)
 	var tw := create_tween()
-	tw.tween_property(banner, "modulate:a", 1.0, 0.25)
+	tw.set_parallel(true)
+	tw.tween_property(banner, "modulate:a", 1.0, 0.28)
+	tw.tween_property(banner, "scale", Vector2.ONE, 0.32).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 
 func _style_retry() -> void:
 	retry_button.add_theme_font_size_override("font_size", 18)
 	retry_button.focus_mode = Control.FOCUS_NONE
 	if continue_button:
-		continue_button.add_theme_font_size_override("font_size", 20)
+		continue_button.add_theme_font_size_override("font_size", 22)
 		continue_button.focus_mode = Control.FOCUS_NONE

@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=3 uid="uid://burn_intro"]
+
+[ext_resource type="Script" path="res://scripts/ui/intro_screen.gd" id="1_intro"]
+[ext_resource type="Shader" path="res://shaders/background.gdshader" id="2_bg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bg"]
+shader = ExtResource("2_bg")
+shader_parameter/top_color = Color(0.1, 0.075, 0.06, 1)
+shader_parameter/bottom_color = Color(0.03, 0.022, 0.018, 1)
+shader_parameter/accent_color = Color(0.7, 0.32, 0.1, 1)
+shader_parameter/vignette_strength = 0.62
+shader_parameter/grain_strength = 0.03
+shader_parameter/warm_lift = 0.08
+shader_parameter/haze = 0.14
+shader_parameter/time_scale = 0.05
+shader_parameter/fire_glow = 0.35
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_intro")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_bg")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="FlameVisual" type="Polygon2D" parent="."]
+position = Vector2(360, 520)
+color = Color(1, 0.45, 0.12, 1)
+polygon = PackedVector2Array(0, -90, 28, -40, 22, 10, 48, 50, 10, 40, 0, 70, -10, 40, -48, 50, -22, 10, -28, -40)
+
+[node name="FlameCore" type="Polygon2D" parent="FlameVisual"]
+color = Color(1, 0.88, 0.45, 0.95)
+scale = Vector2(0.45, 0.55)
+polygon = PackedVector2Array(0, -90, 28, -40, 22, 10, 48, 50, 10, 40, 0, 70, -10, 40, -48, 50, -22, 10, -28, -40)
+
+[node name="Brand" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 120.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.98, 0.93, 0.86, 1)
+theme_override_font_sizes/font_size = 92
+text = "BURN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tagline" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = 196.0
+offset_right = 220.0
+offset_bottom = 236.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.85, 0.68, 0.48, 0.9)
+theme_override_font_sizes/font_size = 20
+text = "Tap once. Watch it burn."
+horizontal_alignment = 1
+
+[node name="Hint" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -100.0
+offset_right = 120.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.7, 0.6, 0.5, 0.55)
+theme_override_font_sizes/font_size = 16
+text = "tap to continue"
+horizontal_alignment = 1

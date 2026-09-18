@@ -1,16 +1,49 @@
-# ASSETS.md
+# BURN — Visual Assets
 
-Phase 2 of **BURN** uses **no purchased, scraped, or copyrighted third-party art/audio**.
+All art is **original** and hybrid: procedural textures + small shaders. No third-party / copyrighted game assets.
 
-| Asset | Source | License | Notes |
-| --- | --- | --- | --- |
-| `icon.svg` | Original (this repo) | Project | Simple flame mark for Godot project icon |
-| Background look | `shaders/background.gdshader` | Project | Procedural gradient + grain |
-| Object shapes | `Polygon2D` primitives | Engine | Colored via MaterialDefinition |
-| Fire / explosion particles | `GPUParticles2D` + generated soft texture | Engine / runtime | Visual only |
-| Audio | Procedural tones via `AudioStreamGenerator` | Project | No external SFX files |
-| Fonts | Godot default theme font | Godot | Prototype OK |
+## Folders
 
-## Future
+| Path | Purpose |
+|------|---------|
+| `assets/textures/` | Reserved for optional baked exports (currently empty — textures generated at runtime) |
+| `shaders/` | `background.gdshader`, `burnable_surface.gdshader` |
+| `scripts/visual/` | Themes, presenter, particles, camera, composition, texture factory |
+| `resources/themes/` | Theme ids resolved in code via `EnvironmentTheme` factories |
+| `resources/levels/showcase/` | `SHOWCASE_01`–`07` art-review levels |
+| `icon.svg` | App / brand mark |
 
-If SFX, fonts, or textures are added later, list each file here with author, URL, and license (prefer CC0 / public domain / original).
+## Procedural textures (`SoftTextureFactory`)
+
+Generated per `visual_seed` (from level seed / id). Cached in `MaterialVisualCatalog`.
+
+- **paper** — fibers + soft folds
+- **wood** — grain bands + knots
+- **grass** — blade clusters
+- **fabric** — weave + fold shading
+- **oil** — glossy puddle falloff
+- **plastic** — specular band + micro scratches
+- **metal** — brushed steel bands
+- **glass** — rim light + transparency
+
+Particle soft blobs are also procedural (no PNG dependency).
+
+## Environments
+
+| Id | Mood |
+|----|------|
+| `workshop` | Warm charcoal, amber accent |
+| `forest` | Cool canopy green-gray |
+| `warehouse` | Cold steel night |
+
+Set via level JSON `"environment"` field, or archetype heuristic in `EnvironmentPresenter`.
+
+## Decorative props
+
+`CompositionLayer` spawns non-interactive silhouettes with `gameplay=false` / `decoration=true`. Never registered with `FireManager`.
+
+## Runtime rules
+
+- Visuals **observe** burn state only; they never write heat / ignition / progress.
+- `visual_seed` must not alter solver / generator determinism.
+- Particle pools stay modest for 60 FPS mobile targets.

@@ -1,0 +1,89 @@
+[gd_scene load_steps=4 format=3 uid="uid://burn_level_select"]
+
+[ext_resource type="Script" path="res://scripts/ui/level_select.gd" id="1_sel"]
+[ext_resource type="Shader" path="res://shaders/background.gdshader" id="2_bg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bg"]
+shader = ExtResource("2_bg")
+shader_parameter/top_color = Color(0.1, 0.08, 0.07, 1)
+shader_parameter/bottom_color = Color(0.03, 0.025, 0.022, 1)
+shader_parameter/accent_color = Color(0.5, 0.28, 0.14, 1)
+shader_parameter/vignette_strength = 0.58
+shader_parameter/grain_strength = 0.028
+shader_parameter/warm_lift = 0.05
+shader_parameter/haze = 0.1
+shader_parameter/time_scale = 0.04
+shader_parameter/fire_glow = 0.1
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sel")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_bg")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 1)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 48.0
+offset_right = 160.0
+offset_bottom = 110.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95, 0.88, 0.78, 1)
+theme_override_font_sizes/font_size = 36
+text = "LEVELS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = 120.0
+offset_right = -40.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="List" type="VBoxContainer" parent="Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -90.0
+offset_right = 70.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9, 0.82, 0.72, 0.9)
+theme_override_colors/font_hover_color = Color(1, 0.72, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "BACK"
+flat = true

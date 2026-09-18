@@ -37,6 +37,11 @@ var burned_fraction: float = 0.0
 ## If false, object is a tempting decoy and does not affect win %.
 var counts_for_score: bool = true
 
+## Display-only. Set by LevelLoader / GameManager from level visual_seed.
+var visual_seed: int = 1
+var _surface_mat: ShaderMaterial
+var _shadow: Polygon2D
+
 @onready var _collision: CollisionShape2D = $CollisionShape2D
 @onready var _body: Polygon2D = $Body
 @onready var _glow: Polygon2D = $Glow
@@ -79,12 +84,51 @@ func _setup_shape() -> void:
 	])
 	_body.polygon = pts
 	_glow.polygon = pts
+	_ensure_shadow(pts)
+
+
+func _ensure_shadow(pts: PackedVector2Array) -> void:
+	if _shadow == null:
+		_shadow = Polygon2D.new()
+		_shadow.name = "SoftShadow"
+		_shadow.z_index = -2
+		_shadow.color = Color(0.02, 0.015, 0.01, 0.42)
+		add_child(_shadow)
+		move_child(_shadow, 0)
+	_shadow.polygon = pts
+	_shadow.position = Vector2(5, 8)
+	_shadow.scale = Vector2(1.04, 1.06)
 
 
 func _apply_base_look() -> void:
-	_body.color = material_def.base_color
+	if material_def == null:
+		return
+	_surface_mat = MaterialVisualCatalog.make_surface_material(material_def, visual_seed)
+	_body.material = _surface_mat
+	## Polygon2D only samples UVs when a texture is assigned.
+	var mid := String(material_def.id)
+	_body.texture = MaterialVisualCatalog.albedo_for(mid, visual_seed)
+	_body.color = Color.WHITE
+	_body.uv = PackedVector2Array([
+		Vector2(0, 0), Vector2(1, 0), Vector2(1, 1), Vector2(0, 1),
+	])
+	if _shadow:
+		_shadow.modulate.a = 1.0
+		if not material_def.is_flammable:
+			_shadow.color = Color(0.04, 0.04, 0.05, 0.35)
 	modulate = Color.WHITE
 	scale = Vector2.ONE
+	_set_surface(0.0, 0.0, 0.0, 0.0, 0.0)
+
+
+func _set_surface(heat_a: float, burn_a: float, char_a: float, dissolve_a: float, glow_a: float) -> void:
+	if _surface_mat == null:
+		return
+	_surface_mat.set_shader_parameter("heat_amount", heat_a)
+	_surface_mat.set_shader_parameter("burn_amount", burn_a)
+	_surface_mat.set_shader_parameter("char_amount", char_a)
+	_surface_mat.set_shader_parameter("dissolve", dissolve_a)
+	_surface_mat.set_shader_parameter("glow_strength", glow_a)
 
 
 func get_heat_radius() -> float:
@@ -267,34 +311,39 @@ func _input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 
 
 func _update_heating_visual() -> void:
-	if material_def == null or _body == null:
+	if material_def == null:
 		return
 	var t := clampf(heat / maxf(material_def.ignition_threshold, 0.01), 0.0, 1.0)
-	_body.color = material_def.base_color.lerp(material_def.burn_tint, t * 0.35)
+	_set_surface(t, 0.0, 0.0, 0.0, t * 0.35)
 	if _glow:
 		_glow.visible = t > 0.15
-		_glow.modulate = Color(material_def.burn_tint.r, material_def.burn_tint.g, material_def.burn_tint.b, t * 0.35)
+		_glow.modulate = Color(material_def.burn_tint.r, material_def.burn_tint.g, material_def.burn_tint.b, t * 0.32)
 
 
 func _update_burn_visual() -> void:
-	if material_def == null or _body == null:
+	if material_def == null:
 		return
 	var t := burned_fraction
-	_body.color = material_def.burn_tint.lerp(material_def.char_color, t * 0.85)
+	_set_surface(0.2, t, t * 0.55, t * 0.35, lerpf(1.1, 0.35, t))
 	if _glow:
 		_glow.visible = true
-		_glow.modulate = Color(1.0, 0.55, 0.15, lerpf(0.55, 0.15, t))
-	scale = Vector2.ONE * lerpf(1.0, 0.92, t)
+		_glow.modulate = Color(1.0, 0.55, 0.15, lerpf(0.55, 0.12, t))
+	scale = Vector2.ONE * lerpf(1.0, 0.94, t)
+	if _shadow:
+		_shadow.modulate.a = lerpf(1.0, 0.45, t)
 
 
 func _update_char_visual() -> void:
-	if material_def == null or _body == null:
+	if material_def == null:
 		return
-	_body.color = material_def.char_color
+	var t := 1.0 - clampf(char_timer / maxf(material_def.char_duration, 0.01), 0.0, 1.0)
+	_set_surface(0.0, 1.0, lerpf(0.7, 1.0, t), lerpf(0.4, 0.75, t), 0.15)
 	if _glow:
 		_glow.visible = true
-		_glow.modulate = Color(1.0, 0.3, 0.05, 0.12)
+		_glow.modulate = Color(1.0, 0.3, 0.05, 0.10)
 	scale = Vector2.ONE * 0.9
+	if _shadow:
+		_shadow.modulate.a = 0.35
 
 
 func _play_ignition_flash() -> void:
@@ -302,6 +351,7 @@ func _play_ignition_flash() -> void:
 		return
 	_glow.visible = true
 	_glow.modulate = Color(1.0, 0.95, 0.7, 0.9)
+	_set_surface(0.5, 0.15, 0.0, 0.0, 1.2)
 	var flash := create_tween()
 	flash.set_parallel(true)
 	var peak := 1.0 + 0.18 * (material_def.ignition_flash if material_def else 1.0)
@@ -313,13 +363,16 @@ func _play_ignition_flash() -> void:
 
 func _play_destroy_tween() -> void:
 	input_pickable = false
+	_set_surface(0.0, 1.0, 1.0, 0.95, 0.05)
 	if not is_inside_tree():
 		visible = false
 		return
 	var tw := create_tween()
 	tw.set_parallel(true)
-	tw.tween_property(self, "modulate:a", 0.0, 0.35).set_ease(Tween.EASE_IN)
-	tw.tween_property(self, "scale", Vector2.ONE * 0.7, 0.35)
+	tw.tween_property(self, "modulate:a", 0.0, 0.38).set_ease(Tween.EASE_IN)
+	tw.tween_property(self, "scale", Vector2.ONE * 0.72, 0.38)
+	if _shadow:
+		tw.tween_property(_shadow, "modulate:a", 0.0, 0.3)
 	tw.chain().tween_callback(func() -> void:
 		visible = false
 		if _glow:
