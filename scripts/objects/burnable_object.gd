@@ -105,8 +105,10 @@ func _apply_base_look() -> void:
 		return
 	_surface_mat = MaterialVisualCatalog.make_surface_material(material_def, visual_seed)
 	_body.material = _surface_mat
+	## Polygon2D only samples UVs when a texture is assigned.
+	var mid := String(material_def.id)
+	_body.texture = MaterialVisualCatalog.albedo_for(mid, visual_seed)
 	_body.color = Color.WHITE
-	## UV for Polygon2D: assign matching uvs so shader samples texture.
 	_body.uv = PackedVector2Array([
 		Vector2(0, 0), Vector2(1, 0), Vector2(1, 1), Vector2(0, 1),
 	])

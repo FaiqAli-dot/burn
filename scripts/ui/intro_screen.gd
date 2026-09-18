@@ -25,7 +25,7 @@ func _ready() -> void:
 	var pulse := create_tween().set_loops()
 	pulse.tween_property(flame, "scale", Vector2(1.06, 1.1), 0.7).set_trans(Tween.TRANS_SINE)
 	pulse.tween_property(flame, "scale", Vector2(0.96, 0.94), 0.7).set_trans(Tween.TRANS_SINE)
-	get_tree().create_timer(2.4).timeout.connect(_advance)
+	get_tree().create_timer(3.2).timeout.connect(_advance)
 
 
 func _gui_input(event: InputEvent) -> void:
