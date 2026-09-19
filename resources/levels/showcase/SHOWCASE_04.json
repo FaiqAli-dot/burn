@@ -1,15 +1,15 @@
 {
   "id": "SHOWCASE_04",
   "display_name": "CLOTH LINE",
-  "hint": "Fabric folds",
+  "hint": "Art bench — fabric folds",
   "environment": "workshop",
-  "visual_seed": 404,
+  "visual_seed": 4404,
   "objects": [
-    {"id": "f1", "material": "fabric", "position": [280, 820], "size": [80, 40], "rotation_deg": -12},
-    {"id": "f2", "material": "fabric", "position": [400, 800], "size": [90, 38], "rotation_deg": 8},
-    {"id": "p1", "material": "paper", "position": [340, 700], "size": [50, 50]},
-    {"id": "f3", "material": "fabric", "position": [300, 600], "size": [70, 36], "rotation_deg": 4},
-    {"id": "f4", "material": "fabric", "position": [430, 610], "size": [76, 36], "rotation_deg": -6},
-    {"id": "f5", "material": "fabric", "position": [360, 500], "size": [100, 40], "rotation_deg": 2}
+    {"id": "strip_a", "material": "fabric", "position": [260, 860], "size": [90, 48], "rotation_deg": -14},
+    {"id": "fold_a", "material": "fabric", "position": [430, 840], "size": [100, 46], "rotation_deg": 10},
+    {"id": "spark", "material": "paper", "position": [350, 720], "size": [54, 54]},
+    {"id": "hang_a", "material": "fabric", "position": [280, 600], "size": [80, 70], "rotation_deg": 4},
+    {"id": "bundle", "material": "fabric", "position": [450, 600], "size": [86, 70], "rotation_deg": -6},
+    {"id": "strip_b", "material": "fabric", "position": [360, 480], "size": [110, 44], "rotation_deg": 2}
   ]
 }

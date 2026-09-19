@@ -1,19 +1,19 @@
 {
   "id": "SHOWCASE_03",
   "display_name": "MEADOW",
-  "hint": "Grass clusters — forest theme",
+  "hint": "Art bench — grass clumps",
   "environment": "forest",
-  "visual_seed": 303,
+  "visual_seed": 3303,
   "objects": [
-    {"id": "g1", "material": "grass", "position": [260, 880], "size": [44, 44]},
-    {"id": "g2", "material": "grass", "position": [340, 860], "size": [48, 48]},
-    {"id": "g3", "material": "grass", "position": [420, 880], "size": [44, 44]},
-    {"id": "g4", "material": "grass", "position": [300, 760], "size": [46, 46]},
-    {"id": "g5", "material": "grass", "position": [390, 750], "size": [50, 50]},
-    {"id": "g6", "material": "grass", "position": [250, 680], "size": [42, 42]},
-    {"id": "g7", "material": "grass", "position": [360, 660], "size": [48, 48]},
-    {"id": "g8", "material": "grass", "position": [470, 690], "size": [42, 42]},
-    {"id": "g9", "material": "grass", "position": [330, 560], "size": [46, 46]},
-    {"id": "g10", "material": "grass", "position": [420, 550], "size": [44, 44]}
+    {"id": "g1", "material": "grass", "position": [240, 900], "size": [56, 56]},
+    {"id": "g2", "material": "grass", "position": [340, 880], "size": [64, 64]},
+    {"id": "g3", "material": "grass", "position": [450, 900], "size": [56, 56]},
+    {"id": "g4", "material": "grass", "position": [280, 760], "size": [60, 60]},
+    {"id": "g5", "material": "grass", "position": [400, 740], "size": [66, 66]},
+    {"id": "g6", "material": "grass", "position": [230, 640], "size": [52, 52]},
+    {"id": "g7", "material": "grass", "position": [360, 620], "size": [62, 62]},
+    {"id": "g8", "material": "grass", "position": [490, 650], "size": [54, 54]},
+    {"id": "g9", "material": "grass", "position": [310, 520], "size": [58, 58]},
+    {"id": "g10", "material": "grass", "position": [430, 500], "size": [58, 58]}
   ]
 }

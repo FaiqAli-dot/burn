@@ -40,7 +40,9 @@ var counts_for_score: bool = true
 ## Display-only. Set by LevelLoader / GameManager from level visual_seed.
 var visual_seed: int = 1
 var _surface_mat: ShaderMaterial
-var _shadow: Polygon2D
+var _shadow: Sprite2D
+var _sprite: Sprite2D
+var _glow_sprite: Sprite2D
 
 @onready var _collision: CollisionShape2D = $CollisionShape2D
 @onready var _body: Polygon2D = $Body
@@ -48,6 +50,7 @@ var _shadow: Polygon2D
 @onready var _visual: Node2D = $VisualRoot
 
 const IGNITE_FLASH_TIME := 0.18
+const SPRITE_FIT := 1.22
 
 
 func _ready() -> void:
@@ -67,58 +70,96 @@ func _ready() -> void:
 	if not counts_for_score:
 		## Decoys read quieter so the main chain remains the visual focus.
 		modulate = Color(0.82, 0.78, 0.74, 0.92)
-	_glow.visible = false
-	_glow.modulate.a = 0.0
+	if _glow:
+		_glow.visible = false
+	if _glow_sprite:
+		_glow_sprite.visible = false
+		_glow_sprite.modulate.a = 0.0
 
 
 func _setup_shape() -> void:
 	var shape := RectangleShape2D.new()
 	shape.size = object_size
 	_collision.shape = shape
-	var half := object_size * 0.5
-	var pts := PackedVector2Array([
-		Vector2(-half.x, -half.y),
-		Vector2(half.x, -half.y),
-		Vector2(half.x, half.y),
-		Vector2(-half.x, half.y),
-	])
-	_body.polygon = pts
-	_glow.polygon = pts
-	_ensure_shadow(pts)
+	## Hide prototype polygons — authored sprites are the primary visual.
+	if _body:
+		_body.visible = false
+	if _glow:
+		_glow.visible = false
+	_ensure_sprite_nodes()
 
 
-func _ensure_shadow(pts: PackedVector2Array) -> void:
+func _ensure_sprite_nodes() -> void:
+	if _sprite == null:
+		_sprite = Sprite2D.new()
+		_sprite.name = "ArtSprite"
+		_sprite.z_index = 1
+		_sprite.centered = true
+		_sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+		add_child(_sprite)
 	if _shadow == null:
-		_shadow = Polygon2D.new()
-		_shadow.name = "SoftShadow"
+		_shadow = Sprite2D.new()
+		_shadow.name = "ArtShadow"
 		_shadow.z_index = -2
-		_shadow.color = Color(0.02, 0.015, 0.01, 0.42)
+		_shadow.centered = true
+		_shadow.modulate = Color(0.02, 0.015, 0.01, 0.4)
+		_shadow.position = Vector2(5, 9)
 		add_child(_shadow)
 		move_child(_shadow, 0)
-	_shadow.polygon = pts
-	_shadow.position = Vector2(5, 8)
-	_shadow.scale = Vector2(1.04, 1.06)
+	if _glow_sprite == null:
+		_glow_sprite = Sprite2D.new()
+		_glow_sprite.name = "ArtGlow"
+		_glow_sprite.z_index = 0
+		_glow_sprite.centered = true
+		_glow_sprite.modulate = Color(1.0, 0.55, 0.15, 0.0)
+		_glow_sprite.visible = false
+		add_child(_glow_sprite)
+		move_child(_glow_sprite, 1)
 
 
 func _apply_base_look() -> void:
 	if material_def == null:
 		return
-	_surface_mat = MaterialVisualCatalog.make_surface_material(material_def, visual_seed)
-	_body.material = _surface_mat
-	## Polygon2D only samples UVs when a texture is assigned.
+	_ensure_sprite_nodes()
 	var mid := String(material_def.id)
-	_body.texture = MaterialVisualCatalog.albedo_for(mid, visual_seed)
-	_body.color = Color.WHITE
-	_body.uv = PackedVector2Array([
-		Vector2(0, 0), Vector2(1, 0), Vector2(1, 1), Vector2(0, 1),
-	])
+	var oid := String(name)
+	var tex := MaterialVisualCatalog.sprite_for(mid, visual_seed, oid)
+	_surface_mat = MaterialVisualCatalog.make_sprite_material(material_def, visual_seed, oid)
+	if tex == null:
+		## Hard fail-soft: never leave a colored polygon as primary if art missing.
+		push_warning("BurnableObject %s missing sprite for %s" % [name, mid])
+	_sprite.texture = tex
+	_sprite.material = _surface_mat
+	_sprite.visible = true
+	_fit_sprite(_sprite, tex)
 	if _shadow:
-		_shadow.modulate.a = 1.0
-		if not material_def.is_flammable:
-			_shadow.color = Color(0.04, 0.04, 0.05, 0.35)
+		_shadow.texture = tex
+		_shadow.visible = true
+		_fit_sprite(_shadow, tex, 1.04)
+		_shadow.modulate = Color(0.02, 0.015, 0.01, 0.42 if material_def.is_flammable else 0.32)
+	if _glow_sprite:
+		var glow_tex := MaterialVisualCatalog.flame_tex("small")
+		_glow_sprite.texture = glow_tex if glow_tex else tex
+		_fit_sprite(_glow_sprite, _glow_sprite.texture, 1.35)
+		_glow_sprite.visible = false
+		_glow_sprite.modulate.a = 0.0
+	if _body:
+		_body.visible = false
+	if _glow:
+		_glow.visible = false
 	modulate = Color.WHITE
 	scale = Vector2.ONE
 	_set_surface(0.0, 0.0, 0.0, 0.0, 0.0)
+
+
+func _fit_sprite(spr: Sprite2D, tex: Texture2D, bias: float = SPRITE_FIT) -> void:
+	if spr == null or tex == null:
+		return
+	var ts := tex.get_size()
+	if ts.x < 1.0 or ts.y < 1.0:
+		return
+	var target := object_size * bias
+	spr.scale = Vector2(target.x / ts.x, target.y / ts.y)
 
 
 func _set_surface(heat_a: float, burn_a: float, char_a: float, dissolve_a: float, glow_a: float) -> void:
@@ -129,6 +170,7 @@ func _set_surface(heat_a: float, burn_a: float, char_a: float, dissolve_a: float
 	_surface_mat.set_shader_parameter("char_amount", char_a)
 	_surface_mat.set_shader_parameter("dissolve", dissolve_a)
 	_surface_mat.set_shader_parameter("glow_strength", glow_a)
+
 
 
 func get_heat_radius() -> float:
@@ -315,50 +357,50 @@ func _update_heating_visual() -> void:
 		return
 	var t := clampf(heat / maxf(material_def.ignition_threshold, 0.01), 0.0, 1.0)
 	_set_surface(t, 0.0, 0.0, 0.0, t * 0.35)
-	if _glow:
-		_glow.visible = t > 0.15
-		_glow.modulate = Color(material_def.burn_tint.r, material_def.burn_tint.g, material_def.burn_tint.b, t * 0.32)
+	if _glow_sprite:
+		_glow_sprite.visible = t > 0.2
+		_glow_sprite.modulate = Color(1.0, 0.6, 0.2, t * 0.28)
 
 
 func _update_burn_visual() -> void:
 	if material_def == null:
 		return
 	var t := burned_fraction
-	_set_surface(0.2, t, t * 0.55, t * 0.35, lerpf(1.1, 0.35, t))
-	if _glow:
-		_glow.visible = true
-		_glow.modulate = Color(1.0, 0.55, 0.15, lerpf(0.55, 0.12, t))
+	_set_surface(0.15, t, t * 0.4, t * 0.55, lerpf(1.0, 0.3, t))
+	if _glow_sprite:
+		_glow_sprite.visible = true
+		_glow_sprite.modulate = Color(1.0, 0.55, 0.15, lerpf(0.5, 0.12, t))
 	scale = Vector2.ONE * lerpf(1.0, 0.94, t)
 	if _shadow:
-		_shadow.modulate.a = lerpf(1.0, 0.45, t)
+		_shadow.modulate.a = lerpf(0.42, 0.18, t)
 
 
 func _update_char_visual() -> void:
 	if material_def == null:
 		return
 	var t := 1.0 - clampf(char_timer / maxf(material_def.char_duration, 0.01), 0.0, 1.0)
-	_set_surface(0.0, 1.0, lerpf(0.7, 1.0, t), lerpf(0.4, 0.75, t), 0.15)
-	if _glow:
-		_glow.visible = true
-		_glow.modulate = Color(1.0, 0.3, 0.05, 0.10)
+	_set_surface(0.0, 1.0, lerpf(0.65, 1.0, t), lerpf(0.45, 0.8, t), 0.12)
+	if _glow_sprite:
+		_glow_sprite.visible = true
+		_glow_sprite.modulate = Color(1.0, 0.3, 0.05, 0.08)
 	scale = Vector2.ONE * 0.9
 	if _shadow:
-		_shadow.modulate.a = 0.35
+		_shadow.modulate.a = 0.2
 
 
 func _play_ignition_flash() -> void:
-	if _glow == null:
-		return
-	_glow.visible = true
-	_glow.modulate = Color(1.0, 0.95, 0.7, 0.9)
-	_set_surface(0.5, 0.15, 0.0, 0.0, 1.2)
+	_set_surface(0.45, 0.12, 0.0, 0.0, 1.15)
+	if _glow_sprite:
+		_glow_sprite.visible = true
+		_glow_sprite.modulate = Color(1.0, 0.92, 0.65, 0.85)
 	var flash := create_tween()
 	flash.set_parallel(true)
 	var peak := 1.0 + 0.18 * (material_def.ignition_flash if material_def else 1.0)
 	flash.tween_property(self, "scale", Vector2.ONE * peak, 0.08).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	flash.chain().tween_property(self, "scale", Vector2.ONE, 0.12)
-	var glow_tween := create_tween()
-	glow_tween.tween_property(_glow, "modulate:a", 0.5, IGNITE_FLASH_TIME)
+	if _glow_sprite:
+		var glow_tween := create_tween()
+		glow_tween.tween_property(_glow_sprite, "modulate:a", 0.45, IGNITE_FLASH_TIME)
 
 
 func _play_destroy_tween() -> void:
@@ -375,8 +417,8 @@ func _play_destroy_tween() -> void:
 		tw.tween_property(_shadow, "modulate:a", 0.0, 0.3)
 	tw.chain().tween_callback(func() -> void:
 		visible = false
-		if _glow:
-			_glow.visible = false
+		if _glow_sprite:
+			_glow_sprite.visible = false
 	)
 
 
@@ -393,5 +435,9 @@ func reset_for_retry() -> void:
 	input_pickable = true
 	_set_state(State.UNIGNITED)
 	_apply_base_look()
-	_glow.visible = false
-	_glow.modulate.a = 0.0
+	if _glow_sprite:
+		_glow_sprite.visible = false
+		_glow_sprite.modulate.a = 0.0
+	if _glow:
+		_glow.visible = false
+		_glow.modulate.a = 0.0

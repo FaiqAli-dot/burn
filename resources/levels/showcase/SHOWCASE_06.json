@@ -1,17 +1,18 @@
 {
   "id": "SHOWCASE_06",
   "display_name": "COLD STEEL",
-  "hint": "Metal / glass / plastic — warehouse",
+  "hint": "Art bench — metal / glass / plastic",
   "environment": "warehouse",
-  "visual_seed": 606,
+  "visual_seed": 6606,
   "objects": [
-    {"id": "rail", "material": "metal", "position": [360, 900], "size": [220, 22], "scoring": false},
-    {"id": "pane", "material": "glass", "position": [220, 720], "size": [40, 70], "scoring": false},
-    {"id": "pane2", "material": "glass", "position": [500, 720], "size": [40, 70], "scoring": false},
-    {"id": "crate", "material": "plastic", "position": [360, 780], "size": [60, 50]},
-    {"id": "p1", "material": "paper", "position": [300, 660], "size": [46, 46]},
-    {"id": "p2", "material": "paper", "position": [420, 660], "size": [46, 46]},
-    {"id": "p3", "material": "wood", "position": [360, 560], "size": [100, 32]},
-    {"id": "p4", "material": "paper", "position": [360, 460], "size": [48, 48]}
+    {"id": "rail", "material": "metal", "position": [360, 920], "size": [240, 28], "scoring": false},
+    {"id": "pane_l", "material": "glass", "position": [200, 720], "size": [48, 90], "scoring": false},
+    {"id": "pane_r", "material": "glass", "position": [520, 720], "size": [48, 90], "scoring": false},
+    {"id": "bottle", "material": "plastic", "position": [360, 800], "size": [54, 78]},
+    {"id": "can", "material": "metal", "position": [280, 640], "size": [50, 60], "scoring": false},
+    {"id": "jar", "material": "glass", "position": [440, 640], "size": [48, 64], "scoring": false},
+    {"id": "p1", "material": "paper", "position": [300, 520], "size": [50, 50]},
+    {"id": "p2", "material": "wood", "position": [420, 520], "size": [100, 34]},
+    {"id": "top", "material": "paper", "position": [360, 420], "size": [54, 54]}
   ]
 }

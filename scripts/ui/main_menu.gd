@@ -1,17 +1,20 @@
 extends Control
-## Home: CONTINUE + LEVELS. Progression via ProgressStore. Premium minimal.
+## Home: CONTINUE + LEVELS. Progression via ProgressStore.
 
 @onready var brand: Label = $Brand
 @onready var continue_btn: Button = $Actions/ContinueButton
 @onready var levels_btn: Button = $Actions/LevelsButton
 @onready var settings_btn: Button = $SettingsButton
 @onready var progress_label: Label = $ProgressLabel
-@onready var flame: Polygon2D = $FlameVisual
+@onready var flame: TextureRect = $FlameMark
 
 
 func _ready() -> void:
 	GameManager.progress.load_save()
 	GameManager.progress.configure_sequence(LevelSequenceBuilder.build())
+	var mark := MaterialVisualCatalog.brand_flame()
+	if mark and flame:
+		flame.texture = mark
 	continue_btn.pressed.connect(_on_continue)
 	levels_btn.pressed.connect(func() -> void: GameManager.go_level_select())
 	settings_btn.pressed.connect(_on_settings)
@@ -22,9 +25,10 @@ func _ready() -> void:
 	var tw := create_tween()
 	tw.tween_property(brand, "modulate:a", 1.0, 0.35)
 	tw.parallel().tween_property($Actions, "modulate:a", 1.0, 0.4).set_delay(0.1)
-	var pulse := create_tween().set_loops()
-	pulse.tween_property(flame, "modulate:a", 0.85, 0.8).set_trans(Tween.TRANS_SINE)
-	pulse.tween_property(flame, "modulate:a", 1.0, 0.8).set_trans(Tween.TRANS_SINE)
+	if flame:
+		var pulse := create_tween().set_loops()
+		pulse.tween_property(flame, "modulate:a", 0.88, 0.8).set_trans(Tween.TRANS_SINE)
+		pulse.tween_property(flame, "modulate:a", 1.0, 0.8).set_trans(Tween.TRANS_SINE)
 
 
 func _style_buttons() -> void:
