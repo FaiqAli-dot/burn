@@ -4,6 +4,11 @@ extends Node
 var enabled: bool = true
 
 
+func toggle_enabled() -> bool:
+	enabled = not enabled
+	return enabled
+
+
 func tap() -> void:
 	_pulse(0.2)
 

@@ -1,16 +1,49 @@
-# ASSETS.md
+# BURN — Art Asset Library
 
-Phase 2 of **BURN** uses **no purchased, scraped, or copyrighted third-party art/audio**.
+All gameplay art is **original / generated for BURN**. No copyrighted, ripped, or random stock packs.
 
-| Asset | Source | License | Notes |
-| --- | --- | --- | --- |
-| `icon.svg` | Original (this repo) | Project | Simple flame mark for Godot project icon |
-| Background look | `shaders/background.gdshader` | Project | Procedural gradient + grain |
-| Object shapes | `Polygon2D` primitives | Engine | Colored via MaterialDefinition |
-| Fire / explosion particles | `GPUParticles2D` + generated soft texture | Engine / runtime | Visual only |
-| Audio | Procedural tones via `AudioStreamGenerator` | Project | No external SFX files |
-| Fonts | Godot default theme font | Godot | Prototype OK |
+## Style
+Premium stylized 2D illustration — soft painterly shading, readable silhouettes at gameplay size, warm dark atmospheres. Not photoreal, not pixel art, not emoji.
 
-## Future
+## Layout
 
-If SFX, fonts, or textures are added later, list each file here with author, URL, and license (prefer CC0 / public domain / original).
+```
+assets/
+  materials/{paper,wood,grass,fabric,oil,plastic,metal,glass}/  # 4 variants each
+  fire/{flames,embers,smoke,bursts,burn_masks}/
+  environments/{workshop,forest,warehouse}/backdrop.png
+  ui/branding/flame_mark.png
+  _src/   # generation sheets (Godot-ignored via .gdignore)
+```
+
+## Materials (32 sprites)
+| Material | Variants |
+|----------|----------|
+| paper | sheet, folded, stack, torn |
+| wood | plank, log, branch, crate |
+| grass | clump, patch, tuft, blades |
+| fabric | strip, folded, hanging, bundle |
+| oil | puddle, trail, droplet, spill |
+| plastic | bottle, container, sheet, block |
+| metal | can, plate, sheet, beam |
+| glass | bottle, panel, shard, jar |
+
+Variant selection is presentation-only: `hash(material + object_id + visual_seed)`.
+
+## Fire / FX
+- Flames: small, medium, large, side
+- Embers / smoke / burst plates
+- Burn masks: hole_irregular, crack, multihole, edge_eat (organic dissolve, not circular)
+
+## Environments
+Workshop / Forest / Warehouse authored backdrop plates + shader wash / vignette.
+
+## Integration
+- `MaterialVisualCatalog` loads authored PNGs
+- `MaterialVisualDefinition` separates appearance from gameplay `MaterialDefinition`
+- `BurnableObject` primary visual = `Sprite2D` + `burnable_sprite.gdshader` (polygons hidden)
+- Particles sample flame/ember/smoke textures
+- Intro / Main Menu use `ui/branding/flame_mark.png`
+
+## License
+All files under `assets/` were authored/generated for this project. Free to ship with BURN.

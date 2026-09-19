@@ -78,12 +78,20 @@ static func spawn_from_dict(parent: Node, data: Dictionary) -> Dictionary:
 	if typeof(data.get("generator", null)) == TYPE_DICTIONARY:
 		generator = data["generator"]
 
+	var meta := {
+		"id": String(data.get("id", "level")),
+		"display_name": String(data.get("display_name", "LEVEL")),
+		"hint": String(data.get("hint", "")),
+		"generator": generator,
+		"environment": String(data.get("environment", data.get("theme", ""))),
+	}
+	if data.has("visual_seed"):
+		meta["visual_seed"] = int(data["visual_seed"])
+	var vseed := MaterialVisualCatalog.visual_seed_for_level(meta)
+	for obj in spawned:
+		obj.visual_seed = vseed
+
 	return {
-		"meta": {
-			"id": String(data.get("id", "level")),
-			"display_name": String(data.get("display_name", "LEVEL")),
-			"hint": String(data.get("hint", "")),
-			"generator": generator,
-		},
+		"meta": meta,
 		"objects": spawned,
 	}

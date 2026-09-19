@@ -1,0 +1,16 @@
+{
+  "id": "SHOWCASE_05",
+  "display_name": "FLASHPOINT",
+  "hint": "Art bench — oil + explosion",
+  "environment": "warehouse",
+  "visual_seed": 5505,
+  "objects": [
+    {"id": "oil_core", "material": "oil", "position": [360, 720], "size": [70, 70]},
+    {"id": "trail_l", "material": "oil", "position": [250, 780], "size": [80, 40], "rotation_deg": -20},
+    {"id": "trail_r", "material": "oil", "position": [470, 780], "size": [80, 40], "rotation_deg": 20},
+    {"id": "p1", "material": "paper", "position": [250, 600], "size": [52, 52]},
+    {"id": "p2", "material": "paper", "position": [470, 600], "size": [52, 52]},
+    {"id": "p3", "material": "paper", "position": [360, 540], "size": [56, 56]},
+    {"id": "beam", "material": "metal", "position": [360, 920], "size": [220, 28], "scoring": false}
+  ]
+}

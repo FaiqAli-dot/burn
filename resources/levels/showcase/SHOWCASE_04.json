@@ -1,0 +1,15 @@
+{
+  "id": "SHOWCASE_04",
+  "display_name": "CLOTH LINE",
+  "hint": "Art bench — fabric folds",
+  "environment": "workshop",
+  "visual_seed": 4404,
+  "objects": [
+    {"id": "strip_a", "material": "fabric", "position": [260, 860], "size": [90, 48], "rotation_deg": -14},
+    {"id": "fold_a", "material": "fabric", "position": [430, 840], "size": [100, 46], "rotation_deg": 10},
+    {"id": "spark", "material": "paper", "position": [350, 720], "size": [54, 54]},
+    {"id": "hang_a", "material": "fabric", "position": [280, 600], "size": [80, 70], "rotation_deg": 4},
+    {"id": "bundle", "material": "fabric", "position": [450, 600], "size": [86, 70], "rotation_deg": -6},
+    {"id": "strip_b", "material": "fabric", "position": [360, 480], "size": [110, 44], "rotation_deg": 2}
+  ]
+}

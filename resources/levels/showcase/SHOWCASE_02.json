@@ -1,0 +1,15 @@
+{
+  "id": "SHOWCASE_02",
+  "display_name": "TIMBER",
+  "hint": "Art bench — wood grain",
+  "environment": "workshop",
+  "visual_seed": 2202,
+  "objects": [
+    {"id": "plank_base", "material": "wood", "position": [360, 920], "size": [180, 42], "rotation_deg": 0},
+    {"id": "log_l", "material": "wood", "position": [250, 800], "size": [90, 70], "rotation_deg": -8},
+    {"id": "log_r", "material": "wood", "position": [470, 800], "size": [90, 70], "rotation_deg": 8},
+    {"id": "kindling", "material": "paper", "position": [360, 700], "size": [52, 52], "rotation_deg": 0},
+    {"id": "branch", "material": "wood", "position": [300, 580], "size": [120, 34], "rotation_deg": 12},
+    {"id": "crate", "material": "wood", "position": [440, 560], "size": [100, 48], "rotation_deg": -6}
+  ]
+}
